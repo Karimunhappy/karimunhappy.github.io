@@ -1,4 +1,4 @@
-import Logo from '../../assets/images/IMG_20230214_134037.jpg'
+import Logo from '../../assets/images/cara-ke-karimunjawa-1024x589.webp'
 
 const Page1 = () => {
     return (

@@ -5,15 +5,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FaFacebookF, FaGooglePlus, FaHome, FaInstagram, FaSearch, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import Logo from '../../assets/images/IMG_20230214_134037.jpg'
+import Logo from '../../assets/images/cara-ke-karimunjawa-1024x589.webp'
 import { IoMenu } from 'react-icons/io5';
 
 function TopBar() {
     return (
         <Navbar expand="lg" className="p-0">
             <Container className='flex flex-col p-0 ' fluid >
-                <div className="m-0 w-screen bg-green-600 flex justify-between md:px-24 py-2 text-white">
-                    <div className='flex gap-x-2.5 items-center pl-3'>
+                <div className="m-0 w-screen bg-green-600 flex justify-between md:px-24 py-3 text-white">
+                    <div className='flex gap-x-4 items-center pl-3'>
                         <Nav.Link href="#action1">
                             <FaFacebookF />
                         </Nav.Link>
@@ -43,8 +43,8 @@ function TopBar() {
                 </div>
                 <div className="brain w-screen lg:flex justify-between px-24 py-10 items-center">
                     <Navbar.Brand href="#" className='md:flex items-center justify-center'>
-                        <div className='w-full md:w-28 flex justify-center'>
-                            <img src={Logo} alt="" className='h-28 w-28 bg-red-700 rounded-full md:mr-5' />
+                        <div className='w-full md:w-32 flex justify-center'>
+                            <img src={Logo} alt="" className='h-32 w-32 bg-red-700 rounded-full md:mr-5' />
                         </div>
                         <div className=''>
                             <div className='text-4xl flex justify-center w-full font-Montserrat'>
@@ -60,13 +60,13 @@ function TopBar() {
                             Hubungi Kami:
                         </div>
                         <div className='text-4xl flex justify-center w-full font-Montserrat font-medium'>
-                            <a href="#" className='text-green-600'>(+62) 8908-274-6448</a>
+                            <a href="https://www.karimunjawafun.com" className='text-green-600'>(+62) 8908-274-6448</a>
                         </div>
                     </div>
                 </div>
                 <div className='w-screen bg-slate-200 h-[1px]'></div>
                 <div className='flex justify-between w-11/12 bg-green-600 m-3 p-2 rounded-md lg:hidden'>
-                    <a href="#" className='text-xl text-white bg-green-700 p-2 rounded-md'>
+                    <a href="https://www.karimunjawafun.com" className='text-xl text-white bg-green-700 p-2 rounded-md'>
                         <FaHome />
                     </a>
                     <Navbar.Toggle aria-controls="navbarScroll" style={{ backgroundColor: 'rgb(21 128 61)' }} className='text-white rounded-md flex p-2'>

@@ -9,7 +9,7 @@ const Footer = () => {
                     </div>
                     <div className="font-Poppins">Owner: Ason Gojek</div>
                     <div className="font-Poppins">Instagram:
-                        <a href="#" className="text-green-600"> karimunjawa_happy</a>
+                        <a href="https://www.karimunjawafun.com" className="text-green-600"> karimunjawa_happy</a>
                     </div>
                 </div>
                 <div className="grid grid-rows-3 gap-3">
@@ -20,7 +20,7 @@ const Footer = () => {
                     <div className="font-Poppins">Email: tour@karimunjawafun.com</div>
                     <div className="font-Poppins">
                         Call/WhatsApp :
-                        <a href="#" className="text-green-600"> (+62)82137444853</a>
+                        <a href="https://www.karimunjawafun.com" className="text-green-600"> (+62)82137444853</a>
                     </div>
                 </div>
                 <div className="grid grid-rows-3 gap-3">
@@ -31,7 +31,7 @@ const Footer = () => {
                     <div className="font-Poppins">Office: Jl. Dr Soetomo RT 05/02 Karimunjawa (Srikandi Homestay)</div>
                 </div>
                 <div className="lg:flex justify-center">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4085.4179149781476!2d110.41459193990752!3d-5.839606578240452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e73cde5319dc2ed%3A0x11dea1689fc42ed0!2sSunset%20Beach!5e0!3m2!1sid!2sid!4v1716875908615!5m2!1sid!2sid" width="150" height="150" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Example Website 1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4085.4179149781476!2d110.41459193990752!3d-5.839606578240452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e73cde5319dc2ed%3A0x11dea1689fc42ed0!2sSunset%20Beach!5e0!3m2!1sid!2sid!4v1716875908615!5m2!1sid!2sid" width="150" height="150" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div className="w-screen flex justify-center">

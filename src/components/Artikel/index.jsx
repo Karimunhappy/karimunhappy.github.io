@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { MdDirectionsBoatFilled } from 'react-icons/md';
+// import { MdDirectionsBoatFilled } from 'react-icons/md';
 
 const IncrementingNumber = () => {
     const targetNumber = 2234; // target nominal
     const startNumber = 1000; // starting number
-    const [currentNumber, setCurrentNumber] = useState(startNumber); // initial state
+    // const [currentNumber, setCurrentNumber] = useState(startNumber); // initial state
 
     useEffect(() => {
         const initialIntervalDuration = 1; // initial interval duration in milliseconds

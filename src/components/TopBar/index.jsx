@@ -41,7 +41,7 @@ function TopBar() {
                         <FaSearch />
                     </Form>
                 </div>
-                <div className="brain w-screen lg:flex justify-between px-24 py-10 items-center">
+                <div className="brain w-screen lg:flex justify-between md:px-24 py-10 items-center">
                     <Navbar.Brand href="#" className='md:flex items-center justify-center'>
                         <div className='w-full md:w-32 flex justify-center'>
                             <img src={Logo} alt="" className='h-32 w-32 bg-red-700 rounded-full md:mr-5' />
@@ -59,8 +59,8 @@ function TopBar() {
                         <div className='flex justify-center w-full text-gray-500 font-Poppins'>
                             Hubungi Kami:
                         </div>
-                        <div className='text-4xl flex justify-center w-full font-Montserrat font-medium'>
-                            <a href="https://www.karimunjawafun.com" className='text-green-600'>(+62) 8908-274-6448</a>
+                        <div className='text-3xl flex justify-center w-screen md:w-full font-Montserrat font-medium'>
+                            <a href="https://www.karimunjawafun.com" className='text-green-600 no-underline'>(+62) 8908-274-6448</a>
                         </div>
                     </div>
                 </div>

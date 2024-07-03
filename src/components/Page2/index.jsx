@@ -4,10 +4,10 @@ const Page2 = () => {
     return (
         <div className="w-screen flex flex-col lg:flex-row p-9 lg:px-24">
             <div className='lg:w-2/3'>
-                <div className='text-4xl'>Pemesanan Perjalanan dan Perjalanan Anda dengan Karimunjawa Fun</div>
+                <h2 className='md:text-4xl font-montserrat'>Pemesanan Perjalanan dan Perjalanan Anda dengan Karimunjawa Fun</h2>
                 <div className="bg-green-500 h-[3px] w-32 my-3"></div>
                 <br />
-                <p className='text-lg'>Club hopping? Mal melompat? Naah, itu berita lama. Island hopping adalah
+                <p className='text-base text-gray-500 font-poppins'>Club hopping? Mal melompat? Naah, itu berita lama. Island hopping adalah
                     kegiatan 'itu' untuk Anda lakukan di pulau. Ada dua puluh tujuh dari mereka,
                     dan semua sedang menunggu Anda pecinta laut berangin yang bersemangat.
                     <br />

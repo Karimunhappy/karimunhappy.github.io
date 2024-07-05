@@ -9,7 +9,7 @@ const Footer = () => {
                     </div>
                     <div className="font-Poppins">Owner: Ason Gojek</div>
                     <div className="font-Poppins">Instagram:
-                        <a href="https://www.karimunjawafun.com" className="text-green-600"> karimunjawa_happy</a>
+                        <a href="https://www.karimunjawafun.com" className="text-green-600 no-underline"> karimunjawa_happy</a>
                     </div>
                 </div>
                 <div className="grid grid-rows-3 gap-3">
@@ -20,7 +20,7 @@ const Footer = () => {
                     <div className="font-Poppins">Email: tour@karimunjawafun.com</div>
                     <div className="font-Poppins">
                         Call/WhatsApp :
-                        <a href="https://www.karimunjawafun.com" className="text-green-600"> (+62)82137444853</a>
+                        <a href="https://www.karimunjawafun.com" className="text-green-600 no-underline"> (+62)82137444853</a>
                     </div>
                 </div>
                 <div className="grid grid-rows-3 gap-3">

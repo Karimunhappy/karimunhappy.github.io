@@ -2,7 +2,7 @@ import Lembar from '../../assets/images/walpaper.jpg'
 
 const Page2 = () => {
     return (
-        <div className="w-screen flex flex-col lg:flex-row p-9 lg:px-24">
+        <div className="w-screen flex flex-col lg:flex-row p-9 lg:px-24 bg-white">
             <div className='lg:w-2/3'>
                 <h2 className='md:text-4xl font-montserrat'>Pemesanan Perjalanan dan Perjalanan Anda dengan Karimunjawa Fun</h2>
                 <div className="bg-green-500 h-[3px] w-32 my-3"></div>

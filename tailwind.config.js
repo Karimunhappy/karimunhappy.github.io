@@ -6,7 +6,10 @@ module.exports = {
       fontFamily: {
         Poppins: ["Poppins", 'sans-serif'],
         Montserrat: ["Montserrat", "sans-serif"]
-      }
+      },
+      backgroundImage: {
+        'bgImageCustom': "url('assets/images/taman-nasional-karimun-jawa-jawa-tengah.jpg')",
+      },
     },
   },
   plugins: [],

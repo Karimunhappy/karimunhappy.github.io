@@ -7,10 +7,12 @@ import { FaFacebookF, FaGooglePlus, FaHome, FaInstagram, FaSearch, FaYoutube } f
 import { FaXTwitter } from 'react-icons/fa6';
 import Logo from '../../assets/images/cara-ke-karimunjawa-1024x589.webp'
 import { IoMenu } from 'react-icons/io5';
+import { useNavigate } from 'react-router-dom';
 
 function TopBar() {
+    const navigate = useNavigate();
     return (
-        <Navbar expand="lg" className="p-0">
+        <Navbar expand="lg" className="p-0 bg-white">
             <Container className='flex flex-col p-0 ' fluid >
                 <div className="m-0 w-screen bg-green-600 flex justify-between md:px-24 py-3 text-white">
                     <div className='flex gap-x-4 items-center pl-3'>
@@ -42,7 +44,7 @@ function TopBar() {
                     </Form>
                 </div>
                 <div className="brain w-screen lg:flex justify-between md:px-24 py-10 items-center">
-                    <Navbar.Brand href="#" className='md:flex items-center justify-center'>
+                    <Navbar.Brand onClick={() => { navigate("/") }} className='md:flex items-center justify-center cursor-pointer'>
                         <div className='w-full md:w-32 flex justify-center'>
                             <img src={Logo} alt="" className='h-32 w-32 bg-red-700 rounded-full md:mr-5' />
                         </div>
@@ -82,10 +84,10 @@ function TopBar() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#">
+                        <Nav.Link onClick={() => { navigate("/") }} className='!text-green-600'>
                             HOME
                         </Nav.Link>
-                        <NavDropdown title="PILIHAN PAKET" id="navbarScrollingDropdown">
+                        <NavDropdown title="PILIHAN PAKET" id="navbarScrollingDropdown" className='!text-black'>
                             <NavDropdown.Item href="#action6">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action7">
                                 Another action
@@ -95,7 +97,7 @@ function TopBar() {
                                 Something else here
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#">
+                        <Nav.Link onClick={() => { navigate("/about") }} className='text-black'>
                             TENTANG KARIMUNJAWA
                         </Nav.Link>
                     </Nav>

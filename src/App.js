@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import Bot from "./components/Bot";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App h-screen">
       <Router>
         <TopBar />
+        <Bot />
         <Routes>
           <Route>
             <Route path="/" element={<Home />} />

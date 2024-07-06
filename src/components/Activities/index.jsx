@@ -36,13 +36,12 @@ const Page3 = () => {
             <div className='bg-black bg-opacity-50 text-white flex flex-col justify-center items-center w-screen pt-12 pb-44'>
                 <h2 className="md:text-4xl text-center font-Montserrat">Adventure Activities</h2>
                 <div className="bg-green-500 h-[3px] w-32 my-3"></div>
-                <p className="text-center text-base md:text-lg lg:w-1/2 px-4 font-Poppins">Kegiatan apa saja yang ada di Karimunjawa? Anda dapat
-                    menikmati beberapa kegiatan di Karimunjawa. Mulai dari
-                    snorkeling, diving, pantai, wisata pantai, bbq, dll. Jangan
-                    lewatkan momen Anda di sana! Ajak teman dan keluarga untuk
-                    bersenang-senang di karimunjawa.</p>
+                <p className="text-center text-base md:text-lg lg:w-1/2 px-4 font-Poppins">Apa saja kegiatan yang dapat dilakukan
+                    di Karimunjawa? Anda memiliki banyak pilihan aktivitas untuk dinikmati di sana. Mulai dari snorkeling, menyelam,
+                    menikmati pantai, berwisata pantai, hingga mengadakan BBQ, dan lain-lain. Jangan lewatkan kesempatan Anda saat
+                    berada di sana! Ajak teman dan keluarga untuk bersenang-senang di Karimunjawa.</p>
             </div>
-            <div className='bg-white w-screen h-[360px]'>
+            <div className='bg-white w-screen h-[360px]' data-aos="fade-up">
                 <Swiper
                     modules={[Navigation, Pagination, A11y, HashNavigation]}
                     spaceBetween={0}

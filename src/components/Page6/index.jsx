@@ -6,7 +6,7 @@ const Page6 = () => {
         <div className="bg-white flex flex-col justify-center items-center w-screen py-12">
             <h2 className="md:text-4xl text-center font-Montserrat">Artikel Terbaru</h2>
             <div className="bg-green-500 h-[3px] w-32 my-3"></div>
-            <div className="w-screen flex flex-wrap justify-around gap-y-5 lg:px-16 py-11">
+            <div className="w-screen flex flex-wrap justify-around gap-y-5 lg:px-16 py-11" data-aos="fade-up">
                 <div className="w-full sm:w-auto flex justify-center">
                     <Card style={{}} className="w-72 md:w-96">
                         <Card.Img variant="top" src={Logo} />

@@ -38,7 +38,7 @@ const Page5 = () => {
                             <div className="text-3xl md:text-5xl -mt-3">
                                 {e.icon}
                             </div>
-                            <div className="text-5xl">{e.count}</div>
+                            <div className="text-5xl" data-aos="flip-up">{e.count}</div>
                             <div className="bg-green-500 h-[3px] w-16 my-2"></div>
                             <div className="text-base font-Poppins">
                                 {e.text}

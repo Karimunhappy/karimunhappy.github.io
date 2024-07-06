@@ -1,9 +1,9 @@
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { FaFacebookF, FaGooglePlus, FaHome, FaInstagram, FaSearch, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaGooglePlus, FaHome, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Logo from '../../assets/images/cara-ke-karimunjawa-1024x589.webp'
 import { IoMenu } from 'react-icons/io5';
@@ -32,16 +32,17 @@ function TopBar() {
                             <FaGooglePlus />
                         </Nav.Link>
                     </div>
-                    <Form className="d-flex pr-3">
-                        {/* <Form.Control
+                    <Nav.Link href="https://www.karimunjawfun.com" className='border rounded-sm p-1'>RESERVATION</Nav.Link>
+                    {/* <Form className="d-flex pr-3">
+                        <Form.Control
                             type="search"
                             placeholder="Search"
                             className="me-2"
                             aria-label="Search"
                         />
-                        <Button variant="outline-success">Search</Button> */}
+                        <Button variant="outline-success">Search</Button>
                         <FaSearch />
-                    </Form>
+                    </Form> */}
                 </div>
                 <div className="brain w-screen lg:flex justify-between md:px-24 py-10 items-center">
                     <Navbar.Brand onClick={() => { navigate("/") }} className='md:flex items-center justify-center cursor-pointer'>
@@ -62,7 +63,7 @@ function TopBar() {
                             Hubungi Kami:
                         </div>
                         <div className='text-3xl flex justify-center w-screen md:w-full font-Montserrat font-medium'>
-                            <a href="https://www.karimunjawafun.com" className='text-green-600 no-underline'>(+62) 8908-274-6448</a>
+                            <a href="https://www.karimunjawfun.com" className='text-green-600 no-underline'>(+62) 8908-274-6448</a>
                         </div>
                     </div>
                 </div>
@@ -88,13 +89,12 @@ function TopBar() {
                             HOME
                         </Nav.Link>
                         <NavDropdown title="PILIHAN PAKET" id="navbarScrollingDropdown" className='!text-black'>
-                            <NavDropdown.Item href="#action6">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action6">Paket 2 Hari 1 Malam</NavDropdown.Item>
                             <NavDropdown.Item href="#action7">
-                                Another action
+                                Paket 3 Hari 2 Malam
                             </NavDropdown.Item>
-                            <NavDropdown.Divider />
                             <NavDropdown.Item href="#action5">
-                                Something else here
+                                Paket 4 Hari 3 Malam
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link onClick={() => { navigate("/about") }} className='text-black'>

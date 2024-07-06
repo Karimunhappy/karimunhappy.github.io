@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.79c0001b.css",
+    "main.js": "/static/js/main.1bd8698c.js",
+    "static/js/453.0a35478e.chunk.js": "/static/js/453.0a35478e.chunk.js",
+    "static/media/Buzo.jpg": "/static/media/Buzo.d189c3afa90f194c82f9.jpg",
+    "static/media/taman-nasional-karimun-jawa-jawa-tengah.jpg": "/static/media/taman-nasional-karimun-jawa-jawa-tengah.640a9cd212be7250a170.jpg",
+    "static/media/karimunjawa-1290x540(1).jpg": "/static/media/karimunjawa-1290x540(1).0ad456eb0591f0119149.jpg",
+    "static/media/karimunjawatugu.webp": "/static/media/karimunjawatugu.106985e459913f08118f.webp",
+    "static/media/pulau-karimun.jpg": "/static/media/pulau-karimun.1b3e3d42ecebb0de77ee.jpg",
+    "static/media/cara-ke-karimunjawa-1024x589.webp": "/static/media/cara-ke-karimunjawa-1024x589.8da038bf6cb3e3ec6542.webp",
+    "static/media/images (12).jpeg": "/static/media/images (12).e445dfa726ffe6055ca1.jpeg",
+    "static/media/images.jpeg": "/static/media/images.40f4674c60c705470125.jpeg",
+    "static/media/images (11).jpeg": "/static/media/images (11).282495e58837070c5a72.jpeg",
+    "index.html": "/index.html",
+    "main.79c0001b.css.map": "/static/css/main.79c0001b.css.map",
+    "main.1bd8698c.js.map": "/static/js/main.1bd8698c.js.map",
+    "453.0a35478e.chunk.js.map": "/static/js/453.0a35478e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79c0001b.css",
+    "static/js/main.1bd8698c.js"
+  ]
+}

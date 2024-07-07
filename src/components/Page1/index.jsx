@@ -31,7 +31,7 @@ const Page1 = () => {
         }
     ];
     return (
-        <div className='bg-white'>
+        <div className='bg-white w-full'>
             <Swiper
                 modules={[Autoplay, Navigation, Pagination, A11y]}
                 spaceBetween={0}
@@ -52,15 +52,10 @@ const Page1 = () => {
                     swiperSlides.map((e, i) => (
                         <SwiperSlide
                             key={i}
-                            style={{
-                                width: "100vw",
-                                height: "600px",
-                                cursor: "pointer"
-                            }}
                             data-hash={e.title}
-                            className='group'
+                            className='group w-full h-[300px] md:h-[450px] lg:h-[600px]'
                         >
-                            <Image src={e.image} className='w-screen h-[600px] rounded shadow-inner' />
+                            <Image src={e.image} className='w-full h-[300px] md:h-[450px] lg:h-[600px] rounded shadow-inner' />
                         </SwiperSlide>
                     ))
                 }

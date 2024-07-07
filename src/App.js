@@ -11,7 +11,7 @@ import Bot from "./components/Bot";
 
 function App() {
   return (
-    <div className="App h-screen">
+    <div className="App w-screen">
       <Router>
         <TopBar />
         <Bot />

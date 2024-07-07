@@ -44,7 +44,7 @@ const Page3 = () => {
             <div className='bg-white w-screen h-[360px]' data-aos="fade-up">
                 <Swiper
                     modules={[Navigation, Pagination, A11y, HashNavigation]}
-                    spaceBetween={0}
+                    spaceBetween={30}
                     breakpoints={{
                         640: {
                             slidesPerView: 1,
@@ -66,7 +66,7 @@ const Page3 = () => {
                         watchState: true,
                     }}
                     scrollbar={{ draggable: true }}
-                    className='w-[275px] md:w-[570px] lg:w-[1200px] -mt-36'
+                    className='w-[275px] md:w-[570px] lg:w-full -mt-36 lg:!px-9'
                 >
                     {
                         swiperSlides.map((e, i) => (

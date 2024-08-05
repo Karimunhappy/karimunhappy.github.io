@@ -5,7 +5,7 @@ const Page2 = () => {
         <div className="w-screen flex flex-col lg:flex-row p-9 lg:px-24 bg-white">
             <div className='lg:w-2/3' data-aos="fade-up">
                 <h2 className='md:text-4xl font-montserrat'>Tour Guide Trip Wisata Karimunjawa</h2>
-                <div className="bg-green-500 h-[3px] w-32 my-3"></div>
+                <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
                 <br />
                 <p className='text-base text-gray-500 font-poppins'>Selamat datang di Karimunjawahappy.com,
                     pelopor dan penyedia terpercaya destinasi wisata di Karimunjawa! Nikmati keajaiban alam yang

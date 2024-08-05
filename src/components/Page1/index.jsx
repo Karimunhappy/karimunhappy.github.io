@@ -1,16 +1,16 @@
 import { Image } from 'react-bootstrap';
+import image1 from '../../assets/images/image1(1).jpg'
 import image2 from '../../assets/images/karimunjawa-1290x540(1).jpg'
 import image3 from '../../assets/images/pulau-karimun.jpg'
-import Beach from '../../assets/images/images (11).jpeg'
+import image4 from '../../assets/images/image4.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { A11y, Navigation, Pagination, Autoplay } from 'swiper/modules';
-import Logo from '../../assets/images/cara-ke-karimunjawa-1024x589.webp'
 
 const Page1 = () => {
     const swiperSlides = [
         {
-            image: Logo,
+            image: image1,
             title: 'BBQ',
             text: 'Gather with family and friends to cook Bbq on the beach and enjoy the beautifull sea'
         },
@@ -25,7 +25,7 @@ const Page1 = () => {
             text: 'Swim in deep water of Karimunjawa, where you can watch undersea life from the bottom of the water'
         },
         {
-            image: Beach,
+            image: image4,
             title: 'Beach',
             text: 'Walking on the beach with family and friends or playing sand on the beach, make your memory and activities on beautiful beach of Karimunjawa '
         }
@@ -53,9 +53,9 @@ const Page1 = () => {
                         <SwiperSlide
                             key={i}
                             data-hash={e.title}
-                            className='group w-full h-[300px] md:h-[450px] lg:h-[600px]'
+                            className='group w-full'
                         >
-                            <Image src={e.image} className='w-full h-[300px] md:h-[450px] lg:h-[600px] rounded shadow-inner' />
+                            <Image src={e.image} className='w-full shadow-inner' />
                         </SwiperSlide>
                     ))
                 }

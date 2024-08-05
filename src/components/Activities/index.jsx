@@ -2,7 +2,7 @@ import { Image } from 'react-bootstrap';
 import Bbq from '../../assets/images/images (12).jpeg'
 import Snorkling from '../../assets/images/images.jpeg'
 import Diving from '../../assets/images/Buzo.jpg'
-import Beach from '../../assets/images/images (11).jpeg'
+import Beach from '../../assets/images/IMG-20240717-WA0016.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { A11y, Navigation, Pagination, HashNavigation } from 'swiper/modules';
@@ -35,7 +35,7 @@ const Page3 = () => {
         <div className="text-white flex flex-col justify-center items-center w-screen">
             <div className='bg-black bg-opacity-50 text-white flex flex-col justify-center items-center w-screen pt-12 pb-44'>
                 <h2 className="md:text-4xl text-center font-Montserrat">Adventure Activities</h2>
-                <div className="bg-green-500 h-[3px] w-32 my-3"></div>
+                <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
                 <p className="text-center text-base md:text-lg lg:w-1/2 px-4 font-Poppins">Apa saja kegiatan yang dapat dilakukan
                     di Karimunjawa? Anda memiliki banyak pilihan aktivitas untuk dinikmati di sana. Mulai dari snorkeling, menyelam,
                     menikmati pantai, berwisata pantai, hingga mengadakan BBQ, dan lain-lain. Jangan lewatkan kesempatan Anda saat

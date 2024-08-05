@@ -26,7 +26,9 @@ const Page4 = () => {
                 <div className="max-w-3xl flex flex-col justify-center items-center">
                     <div data-aos="fade-up">
                         <h2 className="md:text-4xl text-center font-Montserrat">Mengapa Memesan dengan Kami</h2>
-                        <div className="bg-green-500 h-[3px] w-32 my-3 font-Poppins"></div>
+                        <div className="flex w-full items-center justify-center">
+                            <div className="bg-green-500 h-[3px] w-32 my-3"></div>
+                        </div>
                         <p className="text-center text-base md:text-lg font-Poppins">Mengapa Anda harus memilih
                             agen tur kami? Kami menawarkan berbagai keuntungan yang patut Anda pertimbangkan.</p>
                     </div>

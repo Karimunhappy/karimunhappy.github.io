@@ -5,7 +5,7 @@ const Footer = () => {
                 <div className="grid grid-rows-3 gap-3">
                     <div>
                         <div className="text-xl font-Montserrat">Information</div>
-                        <div className="bg-green-500 h-[3px] w-16 my-1"></div>
+                        <div className="bg-[#228b22] h-[3px] w-16 my-1"></div>
                     </div>
                     <div className="font-Poppins">Owner: Ason Gojek</div>
                     <div className="font-Poppins">Instagram:

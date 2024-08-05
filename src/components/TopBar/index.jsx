@@ -14,7 +14,7 @@ function TopBar() {
     return (
         <Navbar expand="lg" className="p-0 bg-white">
             <Container className='flex flex-col p-0 ' fluid >
-                <div className="m-0 w-screen bg-green-600 flex justify-between md:px-24 py-3 text-white">
+                <div className="m-0 w-screen bg-[#0077b6] flex justify-between md:px-24 py-3 text-white">
                     <div className='flex gap-x-4 items-center pl-3'>
                         <Nav.Link href="#action1">
                             <FaFacebookF />
@@ -32,26 +32,16 @@ function TopBar() {
                             <FaGooglePlus />
                         </Nav.Link>
                     </div>
-                    <Nav.Link href="https://www.karimunjawfun.com" className='border rounded-sm p-1'>RESERVATION</Nav.Link>
-                    {/* <Form className="d-flex pr-3">
-                        <Form.Control
-                            type="search"
-                            placeholder="Search"
-                            className="me-2"
-                            aria-label="Search"
-                        />
-                        <Button variant="outline-success">Search</Button>
-                        <FaSearch />
-                    </Form> */}
+                    <Nav.Link href="https://www.karimunjawfun.com" className='border rounded-sm p-1 m-1 md:m-0 font-Poppins'>Reservation Now</Nav.Link>
                 </div>
                 <div className="brain w-screen lg:flex justify-between md:px-24 py-10 items-center">
                     <Navbar.Brand onClick={() => { navigate("/") }} className='md:flex items-center justify-center cursor-pointer'>
                         <div className='w-full md:w-32 flex justify-center'>
-                            <img src={Logo} alt="" className='h-32 w-32 bg-red-700 rounded-full md:mr-5' />
+                            <img src={Logo} alt="" className='h-32 w-32 rounded-full md:mr-5' />
                         </div>
                         <div className=''>
                             <div className='text-4xl flex justify-center w-full font-Montserrat'>
-                                Karimunjawa Happy
+                                Karimunjawa Paradise
                             </div>
                             <div className='text-base py-1 flex justify-center w-full font-Poppins text-gray-500'>
                                 Booking Tour and Travel to Karimunjawa
@@ -68,22 +58,21 @@ function TopBar() {
                     </div>
                 </div>
                 <div className='w-screen bg-slate-200 h-[1px]'></div>
-                <div className='flex justify-between w-11/12 bg-green-600 m-3 p-2 rounded-md lg:hidden'>
-                    <a href="https://www.karimunjawafun.com" className='text-xl text-white bg-green-700 p-2 rounded-md'>
+                <div className='flex justify-between w-11/12 bg-[#0077b6] m-3 p-2 rounded-md lg:hidden'>
+                    <a href="https://www.karimunjawafun.com" className='text-xl text-white bg-[#00ced1] p-2 rounded-md'>
                         <FaHome />
                     </a>
-                    <Navbar.Toggle aria-controls="navbarScroll" style={{ backgroundColor: 'rgb(21 128 61)' }} className='text-white rounded-md flex p-2'>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor: '#00ced1' }} className='text-white rounded-md flex p-2 focus:!shadow-none'>
                         <div className='text-base -mt-[3px] me-1'>MENU</div>
                         <div className='text-xl '>
                             <IoMenu />
                         </div>
                     </Navbar.Toggle>
                 </div>
-                <Navbar.Collapse id="navbarScroll" className='lg:w-screen px-24'>
+                <Navbar.Collapse id="basic-navbar-nav" className='lg:w-screen px-24 z-50 mb-2'>
                     <Nav
-                        className="me-auto my-2 font-Montserrat "
+                        className="me-auto my-2 font-Montserrat"
                         style={{ maxHeight: '100px' }}
-                        navbarScroll
                     >
                         <Nav.Link onClick={() => { navigate("/") }} className='!text-green-600'>
                             HOME

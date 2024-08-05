@@ -1,38 +1,15 @@
-.App {
-  text-align: center;
-}
+.underline-ombak {  
+            display: inline-block;  
+            position: relative;  
+            padding-bottom: 10px; /* Jarak antara teks dan underline */  
+        }  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+        .underline-ombak::after {  
+            content: '';  
+            position: absolute;  
+            left: 0;  
+            bottom: 0;  
+            width: 100%;  
+            height: 10px; /* Tinggi garis underline */  
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0,10 Q10,0 20,10 T40,10 T60,10 T80,10 T100,10" fill="transparent" stroke="black" stroke-width="2"/></svg>') repeat-x;  
+        }

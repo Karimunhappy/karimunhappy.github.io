@@ -1,5 +1,5 @@
 import "./tailwind.css";
-// import './App.css';
+import './App.css';
 import TopBar from './components/TopBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';

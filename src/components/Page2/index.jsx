@@ -4,7 +4,7 @@ const Page2 = () => {
     return (
         <div className="w-screen bg-white p-9 lg:px-24">
             <div className='grid grid-cols-1 justify-items-center'>
-                <h2 className='md:text-4xl font-montserrat'>Let's go to Karimunjawa Tourism</h2>
+                <h2 className='md:text-4xl font-montserrat text-center'>Let's go to Karimunjawa Tourism</h2>
                 <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
             </div>
             <div className='flex flex-col lg:flex-row'>

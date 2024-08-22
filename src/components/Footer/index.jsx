@@ -55,7 +55,7 @@ const Footer = () => {
                 <div className="bg-gray-500 w-5/6 h-[1px] flex justify-center"></div>
             </div>
             <div className="w-screen flex justify-center">
-                <center className="py-7 font-Poppins">
+                <center className="py-7 px-1 font-Poppins">
                     © 2024 Karimunjawaparadise. All rights Reserved
                 </center>
             </div>

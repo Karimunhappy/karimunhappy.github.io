@@ -39,7 +39,7 @@ function TopBar() {
                             <img src={Logo} alt="" className='h-32 w-32 md:mr-5' />
                         </div>
                         <div className=''>
-                            <div className='text-4xl flex justify-center w-full font-Montserrat'>
+                            <div className='text-3xl md:text-4xl flex justify-center w-full font-Montserrat'>
                                 Karimunjawa Paradise
                             </div>
                             <div className='text-base py-1 flex justify-center w-full font-Poppins text-gray-500'>

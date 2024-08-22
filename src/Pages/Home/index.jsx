@@ -1,21 +1,21 @@
-import Page3 from "../../components/Activities"
-import Page1 from "../../components/Page1"
+import Heroes from "../../components/Heroes"
 import Page2 from "../../components/Page2"
-import Page5 from "../../components/Page5"
+import Page3 from "../../components/Activities"
+import Testimonials from "../../components/Testimonials"
 import Paket from "../../components/PaketKarimunjawa"
-// import Page6 from "../../components/Page6"
-import Page4 from "../../components/ReasonToOrder"
+import Galery from "../../components/Page6"
+import ReasontoOrder from "../../components/ReasonToOrder"
 
 const Home = () => {
     return (
         <div>
-            <Page1 />
+            <Heroes />
             <Page2 />
             <Page3 />
             <Paket />
-            <Page4 />
-            <Page5 />
-            {/* <Page6 /> */}
+            <ReasontoOrder />
+            <Testimonials />
+            <Galery />
         </div>
     )
 }

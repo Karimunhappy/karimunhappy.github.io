@@ -1,11 +1,10 @@
 import Container from 'react-bootstrap/Container';
-// import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FaFacebookF, FaGooglePlus, FaHome, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import Logo from '../../assets/images/cara-ke-karimunjawa-1024x589.webp'
+import Logo from '../../assets/images/Screenshot_65-removebg-preview.png'
 import { IoMenu } from 'react-icons/io5';
 import { useNavigate } from 'react-router-dom';
 
@@ -37,7 +36,7 @@ function TopBar() {
                 <div className="brain w-screen lg:flex justify-between md:px-24 py-10 items-center">
                     <Navbar.Brand onClick={() => { navigate("/") }} className='md:flex items-center justify-center cursor-pointer'>
                         <div className='w-full md:w-32 flex justify-center'>
-                            <img src={Logo} alt="" className='h-32 w-32 rounded-full md:mr-5' />
+                            <img src={Logo} alt="" className='h-32 w-32 md:mr-5' />
                         </div>
                         <div className=''>
                             <div className='text-4xl flex justify-center w-full font-Montserrat'>

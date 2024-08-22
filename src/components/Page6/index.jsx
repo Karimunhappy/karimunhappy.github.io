@@ -1,63 +1,64 @@
-import { Card } from "react-bootstrap";
-import Logo from '../../assets/images/images.jpeg'
+import { Image } from "react-bootstrap"
+import Image1 from '../../assets/images/IMG-20240730-WA0005.jpg'
+import Image2 from '../../assets/images/Screenshot_86.jpg'
+import Image3 from '../../assets/images/IMG-20240717-WA0002.jpg'
+import Image4 from '../../assets/images/IMG-20240717-WA0006.jpg'
+import Image5 from '../../assets/images/IMG-20240717-WA0008.jpg'
+import Image6 from '../../assets/images/IMG-20240717-WA0012.jpg'
+import Image7 from '../../assets/images/IMG-20240730-WA0001.jpg'
+import Image8 from '../../assets/images/IMG-20240717-WA0015.jpg'
+import Image9 from '../../assets/images/images.jpeg'
+import Image10 from '../../assets/images/IMG-20240717-WA0010.jpg'
+import Image11 from '../../assets/images/image4.jpg'
 
-const Page6 = () => {
+const Galery = () => {
+    const Images1 = [
+        Image1,
+        Image2,
+        Image3,
+        Image4,
+    ]
+    const Images2 = [
+        Image5,
+        Image6,
+        Image7,
+        Image8,
+    ]
+    const Images3 = [
+        Image9,
+        Image10,
+        Image11
+    ]
     return (
         <div className="bg-white flex flex-col justify-center items-center w-screen py-12">
-            <h2 className="md:text-4xl text-center font-Montserrat">Artikel Terbaru</h2>
-            <div className="bg-green-500 h-[3px] w-32 my-3"></div>
-            <div className="w-screen flex flex-wrap justify-around gap-y-5 lg:px-16 py-11" data-aos="fade-up">
-                <div className="w-full sm:w-auto flex justify-center">
-                    <Card style={{}} className="w-72 md:w-96">
-                        <Card.Img variant="top" src={Logo} />
-                        <Card.Body>
-                            <Card.Text>
-                                June 31, 2024
-                            </Card.Text>
-                            <Card.Title>PAKET MURAH OPENTRIP KARIMUNJAWA BULAN FEBRUARI – APRIL 2020</Card.Title>
-                            <Card.Text>
-                                Yuk segera booking open trip KarimunJawa …………………………………………………… ✅ Free Dokumentasi Drone ✅ Free
-                            </Card.Text>
-                            {/* <Button variant="primary">Go somewhere</Button> */}
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className="w-full sm:w-auto flex justify-center">
-                    <Card style={{}} className="w-72 md:w-96">
-                        <Card.Img variant="top" src={Logo} />
-                        <Card.Body>
-                            <Card.Text>
-                                June 31, 2024
-                            </Card.Text>
-                            <Card.Title>PAKET OPENTRIP KARIMUNJAWA AKHIR TAHUN BANYAK DISKON……’</Card.Title>
-                            <Card.Text>
-                                Yuk segera booking open trip KarimunJawa …………………………………………………… ✅ Free Dokumentasi Drone ✅ Free
-                            </Card.Text>
-                            {/* <Button variant="primary">Go somewhere</Button> */}
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className="w-full sm:w-auto flex justify-center">
-                    <Card style={{}} className="w-72 md:w-96">
-                        <Card.Img variant="top" src={Logo} />
-                        <Card.Body>
-                            <Card.Text>
-                                June 31, 2024
-                            </Card.Text>
-                            <Card.Title>PAKET OPENTRIP KARIMUNJAWA BULAN OKTOBER,NOVEMBER DAN DESEMBER SUDAH BISA DI PESAN GAES………..</Card.Title>
-                            <Card.Text>
-                                Yuk segera booking open trip KarimunJawa …………………………………………………… ✅ Free Dokumentasi Drone ✅ Free
-                            </Card.Text>
-                            {/* <Button variant="primary">Go somewhere</Button> */}
-                        </Card.Body>
-                    </Card>
-                </div>
+            <h2 className="md:text-4xl text-center font-Montserrat">Galeri</h2>
+            <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
+            <div className="w-screen flex flex-wrap justify-around gap-y-2 md:gap-y-3 px-2 lg:px-12 pt-11" data-aos="fade-up">
+                {
+                    Images1.map((e, i) => (
+                        <div key={i}>
+                            <Image src={e} className='h-[27vw]' />
+                        </div>
+                    ))
+                }
+                {
+                    Images2.map((e, i) => (
+                        <div key={i}>
+                            <Image src={e} className='h-[30vw]' />
+                        </div>
+                    ))
+                }
+                {
+                    Images3.map((e, i) => (
+                        <div key={i}>
+                            <Image src={e} className='h-[27vw]' />
+                        </div>
+                    ))
+                }
             </div>
-
-
         </div>
 
     )
 }
 
-export default Page6;
+export default Galery;

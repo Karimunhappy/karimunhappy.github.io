@@ -2,7 +2,9 @@ import { Image } from 'react-bootstrap';
 import Bbq from '../../assets/images/images (12).jpeg'
 import Snorkling from '../../assets/images/images.jpeg'
 import Diving from '../../assets/images/Buzo.jpg'
-import Beach from '../../assets/images/IMG-20240717-WA0016.jpg'
+import Island from '../../assets/images/IMG-20240717-WA0009.jpg'
+import BukitLove from '../../assets/images/Berpose di tulisan Love di bukit Love Karimunjawa.jpg'
+import SeaFood from '../../assets/images/Screenshot_86.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { A11y, Navigation, Pagination, HashNavigation } from 'swiper/modules';
@@ -11,35 +13,48 @@ import { A11y, Navigation, Pagination, HashNavigation } from 'swiper/modules';
 const Page3 = () => {
     const swiperSlides = [
         {
-            image: Bbq,
-            title: 'BBQ',
-            text: 'Gather with family and friends to cook Bbq on the beach and enjoy the beautifull sea'
-        },
-        {
             image: Snorkling,
             title: 'Snorkling',
-            text: 'Swim in swallow water of Karimunjawa, where you can whatch undersea life from the surface on the water'
+            text: 'Jelajahi terumbu karang dan ikan berwarna-warni di spot snorkeling terbaik seperti Menjangan Kecil dan Pulau Cemara Kecil. Cocok untuk semua level.'
         },
         {
             image: Diving,
             title: 'Diving',
-            text: 'Swim in deep water of Karimunjawa, where you can watch undersea life from the bottom of the water'
+            text: 'Temukan keindahan bawah laut Karimunjawa dengan diving di spot terkenal seperti Wreck Ship Indonoor dan Pulau Menyawakan'
         },
         {
-            image: Beach,
-            title: 'Beach',
-            text: 'Walking on the beach with family and friends or playing sand on the beach, make your memory and activities on beautiful beach of Karimunjawa '
+            image: Island,
+            title: 'Island Hopping',
+            text: 'Kunjungi pulau-pulau eksotis seperti Pulau Cilik dan Pulau Tengah dalam sehari. Setiap pulau menawarkan pengalaman unik'
+        },
+        {
+            image: Bbq,
+            title: 'Berkemah',
+            text: 'Berkemah di Pulau Tanjung Gelam untuk pengalaman alam yang mendalam dengan pantai indah dan malam berbintang.'
+        },
+        {
+            image: BukitLove,
+            title: 'Sunset di Bukit Love',
+            text: 'Nikmati matahari terbenam yang spektakuler dari Bukit Love, spot romantis terbaik di Karimunjawa'
+        },
+        {
+            image: SeaFood,
+            title: 'Kuliner Laut',
+            text: 'Rasakan lezatnya seafood segar di Pasar Malam Karimunjawa, surga bagi pecinta kuliner laut'
         }
     ];
     return (
         <div className="text-white flex flex-col justify-center items-center w-screen">
             <div className='bg-black bg-opacity-50 text-white flex flex-col justify-center items-center w-screen pt-12 pb-44'>
-                <h2 className="md:text-4xl text-center font-Montserrat">Adventure Activities</h2>
+                <h2 className="md:text-4xl text-center font-Montserrat">Explore Karimunjawa tourism</h2>
                 <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
-                <p className="text-center text-base md:text-lg lg:w-1/2 px-4 font-Poppins">Apa saja kegiatan yang dapat dilakukan
-                    di Karimunjawa? Anda memiliki banyak pilihan aktivitas untuk dinikmati di sana. Mulai dari snorkeling, menyelam,
-                    menikmati pantai, berwisata pantai, hingga mengadakan BBQ, dan lain-lain. Jangan lewatkan kesempatan Anda saat
-                    berada di sana! Ajak teman dan keluarga untuk bersenang-senang di Karimunjawa.</p>
+                <p className="text-center text-base md:text-lg lg:w-1/2 px-4 font-Poppins">
+                    Karimunjawa terkenal dengan keindahan alamnya. Dari Pantai Tanjung Gelam yang eksotis
+                    hingga Pulau Menjangan Besar yang mempesona, temukan destinasi terbaik di Karimunjawa
+                    dengan panduan kami. Jelajahi tempat-tempat indah seperti Pulau Cilik, Pulau Cemara
+                    Besar, dan Pantai Batu Topeng. Setiap lokasi menawarkan keindahan dan pengalaman unik
+                    yang tidak boleh Anda lewatkan.
+                </p>
             </div>
             <div className='bg-white w-screen h-[360px]' data-aos="fade-up">
                 <Swiper

@@ -19,15 +19,19 @@ const Paket = () => {
         <div className="text-white flex flex-col justify-center items-center w-screen">
             <div className='bg-black bg-opacity-50 text-white flex flex-col justify-center items-center w-screen pt-12'>
                 <h2 className="md:text-4xl text-center font-Montserrat">Paket Wisata Karimunjawa</h2>
-                <div className="bg-green-500 h-[3px] w-32 my-3"></div>
-                <p className="text-center text-base md:text-lg lg:w-1/2 px-4 font-Poppins">Berikut beberpa paket tour wisata
-                    Karimunjawa yang sudah kami rancang untuk anda. Silahkan hubungi kami untuk pendampingan tour guide yang
-                    tidak ada dalam paket di website ini, kami siap membantu anda dalam acara kunjungan anda di kepulauan Karimunjawa.</p>
+                <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
+                <p className="text-center text-base md:text-lg lg:w-1/2 px-4 font-Poppins">
+                    Kami menawarkan berbagai paket wisata yang dirancang untuk memenuhi berbagai minat.
+                    Apakah Anda ingin menyelam, snorkeling, atau sekadar bersantai di pantai, kami memiliki
+                    sesuatu untuk Anda. Jelajahi paket wisata populer kami seperti 'Snorkeling Adventure',
+                    'Island Hopping', dan 'Karimunjawa Sunset Tour'. Setiap paket kami dirancang untuk memberikan
+                    pengalaman yang aman dan menyenangkan, dengan pemandu lokal yang berpengetahuan.
+                </p>
             </div>
             <div className="w-screen flex flex-wrap justify-around gap-y-5 lg:px-16 py-11" data-aos="fade-up">
                 {
                     PaketOption.map((e, i) => (
-                        <div className="w-full sm:w-auto flex justify-center">
+                        <div key={i} className="w-full sm:w-auto flex justify-center">
                             <Card className="w-72 md:w-96">
                                 <Card.Img variant="top" src={Logo} />
                                 <Card.Body>
@@ -41,44 +45,6 @@ const Paket = () => {
                         </div>
                     ))
                 }
-
-
-                {/* <div className="w-full sm:w-auto flex justify-center">
-                    <Card style={{}} className="w-72 md:w-96">
-                        <Card.Img variant="top" src={Logo} />
-                        <Card.Body>
-                            <Card.Title>Paket 2 Hari 1 Malam</Card.Title>
-                            <Card.Text>
-                                Paket dengan durasi paling singkat ini sangat cocok buat anda para pekerja kantoran yang tidak mempunyai banyak waktu untuk liburan.
-                            </Card.Text>
-                            <Button variant="primary">Selengkapnya</Button>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className="w-full sm:w-auto flex justify-center">
-                    <Card style={{}} className="w-72 md:w-96">
-                        <Card.Img variant="top" src={Logo} />
-                        <Card.Body>
-                            <Card.Title>Paket 3 Hari 2 Malam</Card.Title>
-                            <Card.Text>
-                                Paket dengan durasi paling banyak diminati. Dengan paket ini anda mempunyai waktu cukup mengunjungi beberapa destinasi unggulan.
-                            </Card.Text>
-                            <Button className="bg-white !text-blue-600">Selengkapnya</Button>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className="w-full sm:w-auto flex justify-center">
-                    <Card style={{}} className="w-72 md:w-96">
-                        <Card.Img variant="top" src={Logo} />
-                        <Card.Body>
-                            <Card.Title>Paket 4 Hari 3 Malam</Card.Title>
-                            <Card.Text>
-                                Paket paling ideal untuk diambil, bisa mengunjungi lebih banyak lagi destinasi, waktu kegiatan tidak terlalu padat.
-                            </Card.Text>
-                            <Button>Selengkapnya</Button>
-                        </Card.Body>
-                    </Card>
-                </div> */}
             </div>
         </div>
     )

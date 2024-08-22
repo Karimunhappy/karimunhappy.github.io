@@ -1,26 +1,43 @@
+import { FaFacebookF, FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
+
 const Footer = () => {
     return (
-        <div className="bg-black w-screen text-slate-300 flex flex-col justify-center">
+        <div className="bg-black w-screen text-slate-300 flex flex-col justify-center shadow-inner-custom">
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 px-12 lg:px-20 py-12">
-                <div className="grid grid-rows-3 gap-3">
-                    <div>
-                        <div className="text-xl font-Montserrat">Information</div>
+                <div>
+                    <div className="mb-7">
+                        <div className="text-xl font-Montserrat">Follow Us On</div>
                         <div className="bg-[#228b22] h-[3px] w-16 my-1"></div>
                     </div>
-                    <div className="font-Poppins">Owner: Ason Gojek</div>
-                    <div className="font-Poppins">Instagram:
-                        <a href="https://www.karimunjawafun.com" className="text-green-600 no-underline"> karimunjawa_happy</a>
+                    <div className="grid gap-2">
+                        <div className="font-Poppins flex">
+                            <FaInstagram />
+                            <a href="https://karimunhappy.github.io/" className="text-green-600 no-underline ps-2 -mt-1"> Instagram</a>
+                        </div>
+                        <div className="font-Poppins flex">
+                            <FaYoutube />
+                            <a href="https://karimunhappy.github.io/" className="text-green-600 no-underline ps-2 -mt-1"> Youtube</a>
+                        </div>
+                        <div className="font-Poppins flex">
+                            <FaXTwitter />
+                            <a href="https://karimunhappy.github.io/" className="text-green-600 no-underline ps-2 -mt-1"> X</a>
+                        </div>
+                        <div className="font-Poppins flex">
+                            <FaFacebookF />
+                            <a href="https://karimunhappy.github.io/" className="text-green-600 no-underline ps-2 -mt-1"> Facebook</a>
+                        </div>
                     </div>
                 </div>
-                <div className="grid grid-rows-3 gap-3">
-                    <div>
+                <div>
+                    <div className="mb-7">
                         <div className="text-xl font-Montserrat">Contact Us</div>
                         <div className="bg-green-500 h-[3px] w-16 my-1"></div>
                     </div>
-                    <div className="font-Poppins">Email: tour@karimunjawafun.com</div>
-                    <div className="font-Poppins">
-                        Call/WhatsApp :
-                        <a href="https://www.karimunjawafun.com" className="text-green-600 no-underline"> (+62)82137444853</a>
+                    <div className="grid gap-2">
+                        <div className="font-Poppins">info@Karimunjawaparadise.com</div>
+                        <div className="font-Poppins">
+                        </div>
+                        <a href="https://karimunhappy.github.io/" className="text-green-600 no-underline"> (+62)82137444853</a>
                     </div>
                 </div>
                 <div className="grid grid-rows-3 gap-3">
@@ -31,7 +48,7 @@ const Footer = () => {
                     <div className="font-Poppins">Office: Jl. Dr Soetomo RT 05/02 Karimunjawa (Srikandi Homestay)</div>
                 </div>
                 <div className="lg:flex justify-center">
-                    <iframe title="Example Website 1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4085.4179149781476!2d110.41459193990752!3d-5.839606578240452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e73cde5319dc2ed%3A0x11dea1689fc42ed0!2sSunset%20Beach!5e0!3m2!1sid!2sid!4v1716875908615!5m2!1sid!2sid" width="150" height="150" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Example Website 1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4085.4179149781476!2d110.41459193990752!3d-5.839606578240452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e73cde5319dc2ed%3A0x11dea1689fc42ed0!2sSunset%20Beach!5e0!3m2!1sid!2sid!4v1716875908615!5m2!1sid!2sid" width="150" height="150" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div className="w-screen flex justify-center">
@@ -39,7 +56,7 @@ const Footer = () => {
             </div>
             <div className="w-screen flex justify-center">
                 <center className="py-7 font-Poppins">
-                    Copyright © Karimunjawahappy.com Travel Agency by Ason Theme. Powered by Turnitin.id
+                    © 2024 Karimunjawaparadise. All rights Reserved
                 </center>
             </div>
         </div>

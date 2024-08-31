@@ -1,36 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8b4f2e6.css",
-    "main.js": "/static/js/main.c3b2b69d.js",
+    "main.css": "/static/css/main.6cbb956c.css",
+    "main.js": "/static/js/main.9a88d986.js",
     "static/js/453.0a35478e.chunk.js": "/static/js/453.0a35478e.chunk.js",
+    "static/media/IMG-20240730-WA0021.jpg": "/static/media/IMG-20240730-WA0021.5f83782f2d115bbddcaf.jpg",
     "static/media/IMG-20240730-WA0005.jpg": "/static/media/IMG-20240730-WA0005.cee297efb77b8f898307.jpg",
+    "static/media/bg-wave.png": "/static/media/bg-wave.890e9d1cfcd0872cf2b1.png",
     "static/media/IMG-20240730-WA0001.jpg": "/static/media/IMG-20240730-WA0001.e3eff13c4c7e8946c8a5.jpg",
     "static/media/Buzo.jpg": "/static/media/Buzo.d189c3afa90f194c82f9.jpg",
     "static/media/IMG-20240717-WA0009.jpg": "/static/media/IMG-20240717-WA0009.435561f180695dc39d7f.jpg",
     "static/media/IMG-20240717-WA0012.jpg": "/static/media/IMG-20240717-WA0012.a84e284c3c2070440f4e.jpg",
-    "static/media/Screenshot_65-removebg-preview.png": "/static/media/Screenshot_65-removebg-preview.c1651772758bbad12a8a.png",
     "static/media/karimunjawa-1290x540(1).jpg": "/static/media/karimunjawa-1290x540(1).f38827443e70a1fee110.jpg",
     "static/media/IMG-20240717-WA0015.jpg": "/static/media/IMG-20240717-WA0015.65faf03fc6f49dde4a30.jpg",
     "static/media/image4.jpg": "/static/media/image4.2dcf81e490d25f7ea34b.jpg",
     "static/media/pulau-karimun.jpg": "/static/media/pulau-karimun.d3f740b8029af294d463.jpg",
-    "static/media/taman-nasional-karimun-jawa-jawa-tengah.jpg": "/static/media/taman-nasional-karimun-jawa-jawa-tengah.640a9cd212be7250a170.jpg",
     "static/media/IMG-20240717-WA0002.jpg": "/static/media/IMG-20240717-WA0002.e550dde3473257525e82.jpg",
     "static/media/IMG-20240717-WA0010.jpg": "/static/media/IMG-20240717-WA0010.8b9eecda5400ddec9070.jpg",
-    "static/media/karimunjawatugu.webp": "/static/media/karimunjawatugu.106985e459913f08118f.webp",
     "static/media/image1(1).jpg": "/static/media/image1(1).b3b252f4d9901d5ce39f.jpg",
     "static/media/Screenshot_86.jpg": "/static/media/Screenshot_86.786a76e2e71e95282e37.jpg",
     "static/media/IMG-20240717-WA0008.jpg": "/static/media/IMG-20240717-WA0008.ec5df5827f3ec309a0b9.jpg",
     "static/media/images (12).jpeg": "/static/media/images (12).e445dfa726ffe6055ca1.jpeg",
     "static/media/IMG-20240717-WA0006.jpg": "/static/media/IMG-20240717-WA0006.e7af4583702ff37407f4.jpg",
     "static/media/images.jpeg": "/static/media/images.40f4674c60c705470125.jpeg",
+    "static/media/LogoTourKarimun.jpeg": "/static/media/LogoTourKarimun.88ef51553ee6c3741b34.jpeg",
     "static/media/Berpose di tulisan Love di bukit Love Karimunjawa.jpg": "/static/media/Berpose di tulisan Love di bukit Love Karimunjawa.2722c231efa436517f52.jpg",
     "index.html": "/index.html",
-    "main.b8b4f2e6.css.map": "/static/css/main.b8b4f2e6.css.map",
-    "main.c3b2b69d.js.map": "/static/js/main.c3b2b69d.js.map",
+    "main.6cbb956c.css.map": "/static/css/main.6cbb956c.css.map",
+    "main.9a88d986.js.map": "/static/js/main.9a88d986.js.map",
     "453.0a35478e.chunk.js.map": "/static/js/453.0a35478e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8b4f2e6.css",
-    "static/js/main.c3b2b69d.js"
+    "static/css/main.6cbb956c.css",
+    "static/js/main.9a88d986.js"
   ]
 }

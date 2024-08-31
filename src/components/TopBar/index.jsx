@@ -41,7 +41,7 @@ function TopBar() {
         };
     }, [lastScrollY]);
     return (
-        <Navbar className={`!fixed top-0 w-full bg-white transition-transform duration-300 z-50 ${showNavbar ? 'translate-y-0' : '-translate-y-full'
+        <Navbar className={`!fixed top-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${showNavbar ? 'translate-y-0' : '-translate-y-full'
             }`} expand="lg" >
             <Container>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />

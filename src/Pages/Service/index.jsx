@@ -1,14 +1,12 @@
-import Heroes from "../../components/Heroes"
-import Explore from "../../components/Explore"
+import Service from "../../components/Service"
 import Testimonials from "../../components/Testimonials"
 import Paket from "../../components/PaketKarimunjawa"
 import Galery from "../../components/Galery"
-import Service from "../../components/Service"
+import Explore from "../../components/Explore"
 
-const Home = () => {
+const PageService = () => {
     return (
         <div>
-            <Heroes />
             <Service />
             <Explore />
             <Paket />
@@ -17,4 +15,4 @@ const Home = () => {
         </div>
     )
 }
-export default Home;
+export default PageService;

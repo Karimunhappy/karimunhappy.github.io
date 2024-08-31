@@ -18,9 +18,8 @@ const Testimonials = () => {
         }
     ]
     return (
-        <div className="bg-black bg-opacity-50 text-white flex flex-col justify-center items-center w-screen px-4 py-16 ">
-            <div className='w-screen bg-slate-600 h-[1px] -mt-16'></div>
-            <h2 className="md:text-4xl text-center font-Montserrat pt-16">Testimoni</h2>
+        <div className="bg-black bg-opacity-50 text-white flex flex-col justify-center items-center w-screen px-4 pb-16 mt-16">
+            <h1 className="md:text-6xl text-center font-Montserrat pt-16">Testimoni</h1>
             <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
             <div className="w-screen md:grid lg:max-w-7xl grid-cols-3 mt-5 px-16 gap-40">
                 <h1 className="font-Montserrat font-bold col-span-1 mb-5">

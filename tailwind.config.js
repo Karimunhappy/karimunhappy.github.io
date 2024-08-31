@@ -8,8 +8,13 @@ module.exports = {
         Montserrat: ["Montserrat", "sans-serif"]
       },
       backgroundImage: {
-        'bgImageCustom': "url('assets/images/taman-nasional-karimun-jawa-jawa-tengah.jpg')",
+        bgSVG: "url('assets/images/bg-wave.png')",
       },
+      colors: {
+        Navy: '#231B5D',
+        BlueSea: '#DCF4F4'
+
+      }
     },
   },
   plugins: [],

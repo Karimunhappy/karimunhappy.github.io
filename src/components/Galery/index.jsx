@@ -30,7 +30,7 @@ const Galery = () => {
         Image11
     ]
     return (
-        <div className="bg-white flex flex-col justify-center items-center w-screen py-12">
+        <div className="bg-white text-Navy flex flex-col justify-center items-center w-screen py-12">
             <h2 className="md:text-4xl text-center font-Montserrat">Galeri</h2>
             <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
             <div className="w-screen flex flex-wrap justify-around gap-y-2 md:gap-y-3 px-2 lg:px-12 pt-11" data-aos="fade-up">

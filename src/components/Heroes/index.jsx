@@ -58,7 +58,7 @@ const Heroes = () => {
     const [time, ampm] = formattedTime.split(' ');
 
     return (
-        <div className='bg-white w-full pb-10'>
+        <div className='bg-white w-full'>
             <Swiper
                 modules={[Autoplay, Navigation, Pagination, A11y]}
                 spaceBetween={0}

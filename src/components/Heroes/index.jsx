@@ -118,7 +118,7 @@ const Heroes = () => {
                     {
                         loading === true ? <div className='flex'></div> : <div className='flex'>
                             <p className='text-xl md:text-4xl'>{weatherData.main.temp}°C</p>
-                            <img src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="Weather Icon" className='h-9' />
+                            <img src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="Weather Icon" className='h-4 md:h-9' />
                         </div>
                     }
                 </div>

@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import Logo from '../../assets/images/LogoTourKarimun.jpeg'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Offcanvas } from 'react-bootstrap';
 
@@ -44,7 +44,7 @@ function TopBar() {
     return (
         <Navbar className={`!fixed top-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${showNavbar ? 'translate-y-0' : '-translate-y-full'
             }`} expand="lg" >
-            <Container>
+            <Container className="grid grid-cols-3 gap-6">
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
                 <Navbar.Brand onClick={() => { navigate("/") }} className='cursor-pointer md:px-32 lg:px-0'>
                     <div className='w-24 md:w-44 flex justify-center'>
@@ -89,12 +89,12 @@ function TopBar() {
                         </Nav.Link>
                     </Nav>
                 </Navbar.Offcanvas>
-                <Nav.Link href="https://www.karimunjawahappy.com" className='border rounded-full py-2 !px-3 me-auto font-Poppins !flex !bg-Navy text-white'>
+                <Link href="https://www.karimunjawahappy.com" className='border rounded-full py-2 !px-3 me-auto font-Poppins !flex !bg-Navy text-white no-underline'>
                     BOOK NOW
                     <span className='p-1'>
                         <FaArrowRightLong />
                     </span>
-                </Nav.Link>
+                </Link>
             </Container>
         </Navbar>
     );

@@ -91,33 +91,33 @@ const Heroes = () => {
             </Swiper>
             <div className='w-screen h-32 bg-gradient-to-t from-white relative z-10 -mt-32'></div>
             <div className='bg-white w-screen h-24 flex justify-center font-light pt-3'>
-                <div className=' text-[#2db0f4] grid grid-cols-2 md:grid-cols-4 max-w-4xl text-[33px]'>
-                    <div className='flex text-7xl] mt-2'>
+                <div className=' text-[#2db0f4] flex justify-between gap-3 max-w-4xl text-[33px]'>
+                    <div className='flex text-3xl md:text-7xl] mt-2'>
                         <LuMapPin />
-                        <div className='text-xl text-orange-500 -mt-1 ms-1'>
+                        <div className='text-sm md:text-xl text-orange-500 -mt-1 ms-1'>
                             <p>KARIMUN</p>
                             <p className='-mt-6'>JAWA</p>
                         </div>
                     </div>
                     <div className="flex">
-                        <p>
+                        <p className='text-xl md:text-4xl'>
                             {time}
                         </p>
-                        <p className='text-xl text-orange-500 px-1'>
+                        <p className='text-xs md:text-xl text-orange-500 px-1'>
                             {ampm}
                         </p>
                     </div>
                     <div className='flex'>
-                        <p>
+                        <p className='text-xl md:text-4xl'>
                             {formattedDateWithoutYear}
                         </p>
-                        <p className='text-xl text-orange-500 px-1'>
+                        <p className='text-xs md:text-xl text-orange-500 px-1'>
                             {year}
                         </p>
                     </div>
                     {
                         loading === true ? <div className='flex'></div> : <div className='flex'>
-                            <p>{weatherData.main.temp}°C</p>
+                            <p className='text-xl md:text-4xl'>{weatherData.main.temp}°C</p>
                             <img src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="Weather Icon" className='h-9' />
                         </div>
                     }

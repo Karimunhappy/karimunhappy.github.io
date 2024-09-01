@@ -44,17 +44,18 @@ function TopBar() {
     return (
         <Navbar className={`!fixed top-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${showNavbar ? 'translate-y-0' : '-translate-y-full'
             }`} expand="lg" >
-            <Container className="grid grid-cols-3 gap-6">
-                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
-                <Navbar.Brand onClick={() => { navigate("/") }} className='cursor-pointer md:px-32 lg:px-0'>
-                    <div className='w-24 md:w-44 flex justify-center'>
-                        <img src={Logo} alt="" className='w-24 md:w-44' />
+            <Container className="grid grid-cols-3 gap-4 md:gap-12">
+                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} className='focus:!shadow-none !border-none' />
+                <Navbar.Brand onClick={() => { navigate("/") }} className='cursor-pointer'>
+                    <div className='w-32 md:w-44 flex justify-center'>
+                        <img src={Logo} alt="" className='w-32 md:w-44' />
                     </div>
                 </Navbar.Brand>
-                <Navbar.Offcanvas id={`offcanvasNavbar-expand-sm`} className='lg:px-16 z-50 mb-2'>
+                <Navbar.Offcanvas id={`offcanvasNavbar-expand-lg`} className='lg:px-16 z-50 mb-2'
+                    style={{ width: '200px', maxWidth: '80%', padding: '10px' }}
+                >
                     <Offcanvas.Header closeButton>
-                        <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
-                            Offcanvas
+                        <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
                         </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Nav
@@ -72,16 +73,16 @@ function TopBar() {
                         </Nav.Link>
                         <NavDropdown title="PILIHAN PAKET" id="navbarScrollingDropdown" className='!text-Navy'>
                             <NavDropdown.Item onClick={() => { navigate("Paket/2D1N") }}>
-                                Paket 2 Hari 1 Malam
+                                Paket 2D1N
                             </NavDropdown.Item>
                             <NavDropdown.Item onClick={() => { navigate("Paket/2D2N") }}>
-                                Paket 2 Hari 2 Malam
+                                Paket 2D2N
                             </NavDropdown.Item>
                             <NavDropdown.Item onClick={() => { navigate("Paket/3D2N") }}>
-                                Paket 3 Hari 2 Malam
+                                Paket 3D2N
                             </NavDropdown.Item>
                             <NavDropdown.Item onClick={() => { navigate("Paket/4D3N") }}>
-                                Paket 4 Hari 3 Malam
+                                Paket 4D3N
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link onClick={() => { navigate("/Testimonials") }} className='!text-Navy'>
@@ -89,12 +90,12 @@ function TopBar() {
                         </Nav.Link>
                     </Nav>
                 </Navbar.Offcanvas>
-                <Link href="https://www.karimunjawahappy.com" className='border rounded-full py-2 !px-3 me-auto font-Poppins !flex !bg-Navy text-white no-underline'>
-                    BOOK NOW
-                    <span className='p-1'>
+                <a href="https://api.whatsapp.com/send?phone=6281353312334" className='text-xs md:text-base rounded-full py-2 !px-3 font-Poppins !flex !bg-Navy text-white no-underline'>
+                    RESERVATION
+                    <span className='ps-1 md:p-1'>
                         <FaArrowRightLong />
                     </span>
-                </Link>
+                </a>
             </Container>
         </Navbar>
     );

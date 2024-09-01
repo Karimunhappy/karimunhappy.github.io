@@ -48,10 +48,10 @@ const Service = () => {
                                 <div className="bg-[#2db0f4] h-[3px] w-32 mt-1 mb-4"></div>
                             </div>
                         </div>
-                        <h3>Mengapa Anda harus memilih agen tur kami?</h3>
+                        <h3 className="text-center">Mengapa Anda harus memilih agen tur kami?</h3>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 py-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 pb-2">
                     {
                         Reason.map((e, i) => (
                             <div key={i} className="flex flex-row px-6">
@@ -71,7 +71,7 @@ const Service = () => {
                     }
                 </div>
             </div>
-            <img src={wavebg} alt="" className="w-screen h-32 bg-white" />
+            <img src={wavebg} alt="" className="w-screen h-10 md:h-32 bg-white" />
         </div>
     )
 }

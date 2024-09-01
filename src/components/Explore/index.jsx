@@ -47,7 +47,7 @@ const Explore = () => {
     return (
         <div className="flex flex-col justify-center items-center w-screen mt-16">
             <div className="text-Navy flex flex-col justify-center items-center w-screen bg-gradient-to-t from-[#DCF4F4] to-white">
-                <div className='text-Navy flex flex-col justify-center items-center w-screen pt-12 pb-44'>
+                <div className='text-Navy flex flex-col justify-center items-center w-screen pt-12 pb-28 md:pb-44'>
                     <h1 className="text-center font-Montserrat">Explore Karimunjawa tourism</h1>
                     <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
                     <h3 className="text-center lg:w-1/2 px-4 font-Poppins">
@@ -80,7 +80,7 @@ const Explore = () => {
                             watchState: true,
                         }}
                         scrollbar={{ draggable: true }}
-                        className='w-full -mt-36 lg:!px-9'
+                        className='w-full -mt-16 md:-mt-36 lg:!px-9'
                     >
                         {
                             swiperSlides.map((e, i) => (
@@ -112,7 +112,7 @@ const Explore = () => {
                     </Swiper>
                 </div>
             </div>
-            <img src={wavebg} alt="" className="w-screen h-32 bg-white" />
+            <img src={wavebg} alt="" className="w-screen h-10 md:h-32 bg-white" />
         </div>
 
     )

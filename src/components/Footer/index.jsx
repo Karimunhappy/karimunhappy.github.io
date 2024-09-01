@@ -7,43 +7,43 @@ const Footer = () => {
                 <div>
                     <div className="mb-7">
                         <div className="text-xl font-Montserrat">Follow Us On</div>
-                        <div className="bg-white h-[3px] w-16 my-1"></div>
+                        <div className="bg-[#2db0f4] h-[3px] w-16 my-1"></div>
                     </div>
                     <div className="grid gap-2">
                         <div className="font-Poppins flex">
                             <FaInstagram />
-                            <a href="https://karimunhappy.github.io/" className="no-underline ps-2 -mt-1"> Instagram</a>
+                            <a href="https://karimunhappy.github.io/" className="no-underline ps-2 -mt-1 text-white"> Instagram</a>
                         </div>
                         <div className="font-Poppins flex">
                             <FaYoutube />
-                            <a href="https://karimunhappy.github.io/" className="no-underline ps-2 -mt-1"> Youtube</a>
+                            <a href="https://karimunhappy.github.io/" className="no-underline ps-2 -mt-1 text-white"> Youtube</a>
                         </div>
                         <div className="font-Poppins flex">
                             <FaXTwitter />
-                            <a href="https://karimunhappy.github.io/" className="no-underline ps-2 -mt-1"> X</a>
+                            <a href="https://karimunhappy.github.io/" className="no-underline ps-2 -mt-1 text-white"> X</a>
                         </div>
                         <div className="font-Poppins flex">
                             <FaFacebookF />
-                            <a href="https://karimunhappy.github.io/" className="no-underline ps-2 -mt-1"> Facebook</a>
+                            <a href="https://karimunhappy.github.io/" className="no-underline ps-2 -mt-1 text-white"> Facebook</a>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div className="mb-7">
                         <div className="text-xl font-Montserrat">Contact Us</div>
-                        <div className="bg-white h-[3px] w-16 my-1"></div>
+                        <div className="bg-[#2db0f4] h-[3px] w-16 my-1"></div>
                     </div>
                     <div className="grid gap-2">
                         <div className="font-Poppins">info@Karimunjawaparadise.com</div>
                         <div className="font-Poppins">
                         </div>
-                        <a href="https://karimunhappy.github.io/" className="no-underline"> (+62)81353312334</a>
+                        <a href="https://karimunhappy.github.io/" className="no-underline text-white"> (+62) 81353312334</a>
                     </div>
                 </div>
                 <div className="grid grid-rows-3 gap-3">
                     <div>
                         <div className="text-xl font-Montserrat">Location</div>
-                        <div className="bg-green-500 h-[3px] w-16 my-1"></div>
+                        <div className="bg-[#2db0f4] h-[3px] w-16 my-1"></div>
                     </div>
                     <div className="font-Poppins">Office: Jl. Pemuda RT 05/02 Karimunjawa (Tri Siwi)</div>
                 </div>

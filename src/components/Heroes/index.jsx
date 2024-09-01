@@ -58,7 +58,7 @@ const Heroes = () => {
     const [time, ampm] = formattedTime.split(' ');
 
     return (
-        <div className='bg-white w-full'>
+        <div className='bg-white w-full pt-20 -mb-16'>
             <Swiper
                 modules={[Autoplay, Navigation, Pagination, A11y]}
                 spaceBetween={0}
@@ -91,7 +91,7 @@ const Heroes = () => {
             </Swiper>
             <div className='w-screen h-32 bg-gradient-to-t from-white relative z-10 -mt-32'></div>
             <div className='bg-white w-screen h-24 flex justify-center font-light pt-3'>
-                <div className=' text-[#2db0f4] flex justify-between gap-3 max-w-4xl text-[33px]'>
+                <div className=' text-[#2db0f4] flex justify-between gap-2 md:gap-10 max-w-4xl text-[33px] z-50'>
                     <div className='flex text-3xl md:text-7xl] mt-2'>
                         <LuMapPin />
                         <div className='text-sm md:text-xl text-orange-500 -mt-1 ms-1'>

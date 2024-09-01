@@ -66,7 +66,7 @@ const Paket = () => {
                     }
                 </div>
             </div>
-            <img src={wavebg} alt="" className="w-screen h-32 bg-black bg-opacity-50" />
+            <img src={wavebg} alt="" className="w-screen h-10 md:h-32 bg-black bg-opacity-50" />
         </div>
     )
 }

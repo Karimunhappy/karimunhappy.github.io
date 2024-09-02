@@ -4,14 +4,23 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import Logo from '../../assets/images/LogoTourKarimun.jpeg'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Offcanvas } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import { MdCall } from 'react-icons/md';
 
 function TopBar() {
+    const { t, i18n } = useTranslation();
     const navigate = useNavigate();
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [isEnglish, setIsEnglish] = useState(true);
+
+    // Fungsi untuk mengubah bahasa
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
 
     const controlNavbar = () => {
         const currentScrollY = window.scrollY;
@@ -19,17 +28,14 @@ function TopBar() {
         // Menampilkan navbar jika scroll ke atas
         if (currentScrollY < lastScrollY) {
             setShowNavbar(true);
-            console.log('current1' + currentScrollY)
         }
         // Menyembunyikan navbar jika scroll ke bawah dan posisi sudah lebih dari 100px
         else if (currentScrollY > lastScrollY && currentScrollY > 50) {
             setShowNavbar(false);
-            console.log('current2' + currentScrollY)
         }
 
         // Update posisi scroll terakhir
         setLastScrollY(currentScrollY);
-        console.log('current3' + currentScrollY)
     };
 
     useEffect(() => {
@@ -63,39 +69,50 @@ function TopBar() {
                         style={{ maxHeight: '100px' }}
                     >
                         <Nav.Link onClick={() => { navigate("/") }} className='!text-Navy'>
-                            HOME
+                            {t('navbar.home')}
                         </Nav.Link>
                         <Nav.Link onClick={() => { navigate("/Service") }} className='!text-Navy'>
-                            SERVICE
+                            {t('navbar.service')}
                         </Nav.Link>
                         <Nav.Link onClick={() => { navigate("/Explore") }} className='!text-Navy'>
-                            EXPLORE
+                            {t('navbar.explore')}
                         </Nav.Link>
-                        <NavDropdown title="PILIHAN PAKET" id="navbarScrollingDropdown" className='!text-Navy'>
+                        <NavDropdown title={t('navbar.package options')} id="navbarScrollingDropdown" className='!text-Navy'>
                             <NavDropdown.Item onClick={() => { navigate("Paket/2D1N") }}>
-                                Paket 2D1N
+                                {t('navbar.package2D1N')}
                             </NavDropdown.Item>
                             <NavDropdown.Item onClick={() => { navigate("Paket/2D2N") }}>
-                                Paket 2D2N
+                                {t('navbar.package2D2N')}
                             </NavDropdown.Item>
                             <NavDropdown.Item onClick={() => { navigate("Paket/3D2N") }}>
-                                Paket 3D2N
+                                {t('navbar.package3D2N')}
                             </NavDropdown.Item>
                             <NavDropdown.Item onClick={() => { navigate("Paket/4D3N") }}>
-                                Paket 4D3N
+                                {t('navbar.package4D3N')}
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link onClick={() => { navigate("/Testimonials") }} className='!text-Navy'>
-                            TESTIMONIALS
+                            {t('navbar.testimonials')}
                         </Nav.Link>
                     </Nav>
                 </Navbar.Offcanvas>
-                <a href="https://api.whatsapp.com/send?phone=6281353312334" className='text-xs md:text-base rounded-full py-2 !px-3 font-Poppins !flex !bg-Navy text-white no-underline'>
-                    RESERVATION
-                    <span className='ps-1 md:p-1'>
-                        <FaArrowRightLong />
-                    </span>
-                </a>
+                <div className='flex gap-2 mt-3'>
+                    <div className='w-[50px] h-6 border rounded-full text-sm flex'>
+                        <button onClick={() => { changeLanguage('en'); setIsEnglish(true); }} className={`px-1 rounded-full ${isEnglish ? 'text-white bg-Navy' : 'bg-white text-black'}`}>EN</button>
+                        <button onClick={() => { changeLanguage('id'); setIsEnglish(false); }} className={`px-1 rounded-full ${!isEnglish ? 'text-white bg-Navy' : 'bg-white text-black'}`}>ID</button>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=6281353312334" className='no-underline'>
+                        <p className='hidden text-xs md:text-base rounded-full py-2 !px-3 font-Poppins md:!flex !bg-Navy text-white no-underline -mt-2'>
+                            {t('navbar.reservation')}
+                            <span className='ps-1 md:p-1'>
+                                <FaArrowRightLong />
+                            </span>
+                        </p>
+                        <p className='text-xl md:hidden mt-1 !text-Navy'>
+                            <MdCall />
+                        </p>
+                    </a>
+                </div>
             </Container>
         </Navbar>
     );

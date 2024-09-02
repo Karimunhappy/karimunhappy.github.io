@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 const Paket2D2N = () => {
     return (
         <div className="bg-white py-44 flex flex-col items-center">
-            <h1> PAKET 2D1N</h1>
+            <h1> PAKET 2D2N</h1>
             <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
             <h2 className="text-center px-10 md:px-28 pb-20">Paket dengan durasi paling singkat ini sangat cocok buat anda para pekerja kantoran yang tidak mempunyai banyak waktu untuk liburan.</h2>
             <h2>Paket Pelni</h2>
@@ -359,6 +359,43 @@ const Paket2D2N = () => {
                         </tr>
                     </tbody>
                 </Table>
+            </div>
+            <div>
+                <h2 className="mt-10">Fasilitas</h2>
+                <p>* ⁠Tiket Kapal KMC Express Bahari PP (pelabuhan Kartini Jepara - Karimunjawa)
+                    <br />
+                    * Makan 6x (sudah termasuk Barbeque 1x di pulau)
+                    <br />
+                    * Mobil transport pelabuhan - penginapan
+                    <br />
+                    * peralatan Snorkeling lengkap
+                    <br />
+                    * Life Jacket/Pelampung
+                    <br />
+                    * Kapal Kecil buat Tour Laut
+                    <br />
+                    * Air mineral
+                    <br />
+                    * Perlengkapan P3k
+                    <br />
+                    * Roti buat Makan Ikan saat Snorkeling
+                    <br />
+                    * Guide Tour Bersertifikat
+                    <br />
+                    * ⁠Biaya sandar Kapal
+                    <br />
+                    * ⁠Foto Underwater
+                    <br />
+                    * ⁠Foto Upwater
+                    <br />
+                    * ⁠Tiket Masuk Wisata
+                </p>
+                <h4>Tidak Termasuk</h4>
+                <p>
+                    * Transportasi ke jepara
+                    <br />
+                    * ⁠biaya tambaha Seperti Jetski
+                </p>
             </div>
         </div>
     )

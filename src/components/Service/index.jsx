@@ -2,39 +2,41 @@ import { FaMapMarkedAlt, FaShieldAlt } from "react-icons/fa";
 import { FaMoneyBillWave, FaStar, FaWrench } from "react-icons/fa6";
 import { GiPalmTree } from "react-icons/gi";
 import wavebg from '../../assets/images/WaveImage.png'
+import { useTranslation } from "react-i18next";
 
 
 const Service = () => {
+    const { t, i18n } = useTranslation();
     const Reason = [
         {
             Icon: <GiPalmTree />,
-            subtitle: "Paket Wisata Lengkap dan Variatif",
-            title: "Tourgates Wisata Karimunjawa menawarkan berbagai pilihan paket wisata, mulai dari snorkeling di terumbu karang yang indah, island hopping ke pulau-pulau eksotis, hingga menikmati keindahan matahari terbenam dalam 'Karimunjawa Sunset Tour'"
+            subtitle: t('content.serviceCardTitle1'),
+            title: t('content.serviceCardContent1'),
         },
         {
             Icon: <FaMapMarkedAlt />,
-            subtitle: "Pemandu Wisata Lokal yang Berpengalaman",
-            title: "Kami menyediakan pemandu lokal yang berpengetahuan luas dan berpengalaman. Mereka tidak hanya mengenal tempat-tempat terbaik di Karimunjawa, tetapi juga siap membantu Anda dengan informasi budaya dan sejarah setempat"
+            subtitle: t('content.serviceCardTitle2'),
+            title: t('content.serviceCardContent2'),
         },
         {
             Icon: <FaMoneyBillWave />,
-            subtitle: "Harga Kompetitif dengan Kualitas Terjamin",
-            title: "Kami menawarkan harga yang bersaing tanpa mengorbankan kualitas pelayanan. Tourgates Wisata Karimunjawa memastikan Anda mendapatkan pengalaman terbaik dengan nilai terbaik"
+            subtitle: t('content.serviceCardTitle3'),
+            title: t('content.serviceCardContent3'),
         },
         {
             Icon: <FaShieldAlt />,
-            subtitle: "Proses Pemesanan Mudah dan Aman",
-            title: "Proses pemesanan yang mudah dan cepat melalui situs kami yang user-friendly. Dapatkan konfirmasi instan dan pilihan pembayaran yang beragam untuk kemudahan Anda"
+            subtitle: t('content.serviceCardTitle4'),
+            title: t('content.serviceCardContent4'),
         },
         {
             Icon: <FaStar />,
-            subtitle: "Testimoni Pelanggan yang Memuaskan",
-            title: "Kami bangga dengan ulasan positif dari pelanggan kami yang telah menikmati perjalanan mereka bersama Tourgates Wisata Karimunjawa. Lihat apa yang mereka katakan dan yakinkan diri Anda untuk memilih kami"
+            subtitle: t('content.serviceCardTitle5'),
+            title: t('content.serviceCardContent5'),
         },
         {
             Icon: <FaWrench />,
-            subtitle: "Layanan Personalisasi dan Fleksibilitas",
-            title: "Kami memahami bahwa setiap wisatawan memiliki preferensi yang berbeda. Oleh karena itu, kami menawarkan layanan yang dapat disesuaikan dengan kebutuhan dan keinginan Anda"
+            subtitle: t('content.serviceCardTitle6'),
+            title: t('content.serviceCardContent6'),
         }
     ];
     return (
@@ -43,12 +45,12 @@ const Service = () => {
                 <div className="flex flex-col justify-center items-center w-screen py-12 px-4">
                     <div className="flex flex-col justify-center items-center">
                         <div data-aos="fade-up">
-                            <h1 className="text-center font-Montserrat">SERVICE</h1>
+                            <h1 className="text-center font-Montserrat">{t('navbar.service')}</h1>
                             <div className="flex w-full items-center justify-center">
                                 <div className="bg-[#2db0f4] h-[3px] w-32 mt-1 mb-4"></div>
                             </div>
                         </div>
-                        <h3 className="text-center">Mengapa Anda harus memilih agen tur kami?</h3>
+                        <h3 className="text-center">{t('content.serviceSubtitle')}</h3>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 pb-2">

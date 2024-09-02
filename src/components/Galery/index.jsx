@@ -10,8 +10,10 @@ import Image8 from '../../assets/images/IMG-20240717-WA0015.jpg'
 import Image9 from '../../assets/images/images.jpeg'
 import Image10 from '../../assets/images/IMG-20240717-WA0010.jpg'
 import Image11 from '../../assets/images/image4.jpg'
+import { useTranslation } from "react-i18next"
 
 const Galery = () => {
+    const { t, i18n } = useTranslation();
     const Images1 = [
         Image1,
         Image2,
@@ -31,7 +33,7 @@ const Galery = () => {
     ]
     return (
         <div className="bg-white text-Navy flex flex-col justify-center items-center w-screen py-12">
-            <h2 className="md:text-4xl text-center font-Montserrat">Galeri</h2>
+            <h2 className="md:text-4xl text-center font-Montserrat">{t('content.galeryTitle')}</h2>
             <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
             <div className="w-screen flex flex-wrap justify-around gap-y-2 md:gap-y-3 px-2 lg:px-12 pt-11" data-aos="fade-up">
                 {

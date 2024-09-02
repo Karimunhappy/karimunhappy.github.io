@@ -1,29 +1,31 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Navigation, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Testimonials = () => {
+    const { t, i18n } = useTranslation();
     const Testimoni = [
         {
-            text: "Karimunjawa menawarkan pemandangan laut yang menakjubkan! Menyelam di perairan jernihnya adalah pengalaman yang tidak terlupakan. Tourgate perjalanan kami benar-benar membantu menjadikan liburan ini sempurna!"
+            text: t('content.testimonialContent1'),
         },
         {
-            text: "Keindahan alam Karimunjawa benar-benar memukau! Pantai pasir putih dan air laut yang jernih membuat pengalaman snorkeling kami menjadi tak terlupakan. Benar-benar destinasi yang harus dikunjungi!"
+            text: t('content.testimonialContent2'),
         },
         {
-            text: "Pengalaman menyelam di Karimunjawa adalah yang terbaik! Terumbu karang dan kehidupan bawah lautnya sangat menakjubkan. Pasti akan kembali untuk menikmati lebih banyak keindahan Karimunjawa."
+            text: t('content.testimonialContent3'),
         },
         {
-            text: "Pengalaman menyelam di Karimunjawa adalah yang terbaik! Terumbu karang dan kehidupan bawah lautnya sangat menakjubkan. Pasti akan kembali untuk menikmati lebih banyak keindahan Karimunjawa."
+            text: t('content.testimonialContent4'),
         }
     ]
     return (
         <div className="bg-black bg-opacity-50 text-white flex flex-col justify-center items-center w-screen px-4 pb-16 mt-16">
-            <h1 className="md:text-6xl text-center font-Montserrat pt-16">Testimoni</h1>
+            <h1 className="md:text-6xl text-center font-Montserrat pt-16">{t('content.testimonialTitle')}</h1>
             <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
             <div className="w-screen md:grid lg:max-w-7xl grid-cols-3 mt-5 px-16 gap-40">
                 <h1 className="font-Montserrat font-bold col-span-1 mb-5">
-                    Apa Kata Mereka Tentang Kami?
+                    {t('content.testimonialSubtitle')}
                 </h1>
                 <div className="col-span-2 font-Poppins">
                     <Swiper

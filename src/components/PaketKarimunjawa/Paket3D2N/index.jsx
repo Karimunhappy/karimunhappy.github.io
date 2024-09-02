@@ -715,6 +715,43 @@ const Paket3D2N = () => {
                     </tbody>
                 </Table>
             </div>
+            <div>
+                <h2 className="mt-10">Fasilitas</h2>
+                <p>* ⁠Tiket Kapal KMC Express Bahari PP (pelabuhan Kartini Jepara - Karimunjawa)
+                    <br />
+                    * Makan 6x (sudah termasuk Barbeque 1x di pulau)
+                    <br />
+                    * Mobil transport pelabuhan - penginapan
+                    <br />
+                    * peralatan Snorkeling lengkap
+                    <br />
+                    * Life Jacket/Pelampung
+                    <br />
+                    * Kapal Kecil buat Tour Laut
+                    <br />
+                    * Air mineral
+                    <br />
+                    * Perlengkapan P3k
+                    <br />
+                    * Roti buat Makan Ikan saat Snorkeling
+                    <br />
+                    * Guide Tour Bersertifikat
+                    <br />
+                    * ⁠Biaya sandar Kapal
+                    <br />
+                    * ⁠Foto Underwater
+                    <br />
+                    * ⁠Foto Upwater
+                    <br />
+                    * ⁠Tiket Masuk Wisata
+                </p>
+                <h4>Tidak Termasuk</h4>
+                <p>
+                    * Transportasi ke jepara
+                    <br />
+                    * ⁠biaya tambaha Seperti Jetski
+                </p>
+            </div>
         </div>
     )
 }

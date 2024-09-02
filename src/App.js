@@ -23,6 +23,9 @@ function App() {
         <Bot />
         <Routes>
           <Route>
+            {/* <Route path="/" element={<Navigate to="/en/home" />} />
+          <Route path="/en/home" element={<Home />} />
+          <Route path="/id/beranda" element={<Home />} /> */}
             <Route path="/" element={<Home />} />
             <Route path="/Service" element={<Service />} />
             <Route path="/Explore" element={<Explore />} />

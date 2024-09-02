@@ -1,18 +1,20 @@
+import { useTranslation } from "react-i18next";
 import { FaFacebookF, FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
+    const { t, i18n } = useTranslation();
     return (
         <div className="bg-Navy w-screen text-white flex flex-col justify-center">
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 px-12 lg:px-20 py-12">
                 <div>
                     <div className="mb-7">
-                        <div className="text-xl font-Montserrat">Follow Us On</div>
+                        <div className="text-xl font-Montserrat">{t('content.footerSocMed')}</div>
                         <div className="bg-[#2db0f4] h-[3px] w-16 my-1"></div>
                     </div>
                     <div className="grid gap-2">
                         <div className="font-Poppins flex">
                             <FaInstagram />
-                            <a href="https://karimunhappy.github.io/" className="no-underline ps-2 -mt-1 text-white"> Instagram</a>
+                            <a href="https://www.instagram.com/karimunjawave" className="no-underline ps-2 -mt-1 text-white"> Instagram</a>
                         </div>
                         <div className="font-Poppins flex">
                             <FaYoutube />
@@ -30,7 +32,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <div className="mb-7">
-                        <div className="text-xl font-Montserrat">Contact Us</div>
+                        <div className="text-xl font-Montserrat">{t('content.footerContact')}</div>
                         <div className="bg-[#2db0f4] h-[3px] w-16 my-1"></div>
                     </div>
                     <div className="grid gap-2">
@@ -42,7 +44,7 @@ const Footer = () => {
                 </div>
                 <div className="grid grid-rows-3 gap-3">
                     <div>
-                        <div className="text-xl font-Montserrat">Location</div>
+                        <div className="text-xl font-Montserrat">{t('content.footerLocation')}</div>
                         <div className="bg-[#2db0f4] h-[3px] w-16 my-1"></div>
                     </div>
                     <div className="font-Poppins">Office: Jl. Pemuda RT 05/02 Karimunjawa (Tri Siwi)</div>

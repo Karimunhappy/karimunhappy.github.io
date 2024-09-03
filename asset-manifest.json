@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.34628f0a.css",
-    "main.js": "/static/js/main.98b927af.js",
+    "main.css": "/static/css/main.2c3fbf8d.css",
+    "main.js": "/static/js/main.703cd3e0.js",
     "static/js/453.0a35478e.chunk.js": "/static/js/453.0a35478e.chunk.js",
     "static/media/IMG-20240730-WA0021.jpg": "/static/media/IMG-20240730-WA0021.5f83782f2d115bbddcaf.jpg",
     "static/media/IMG-20240730-WA0005.jpg": "/static/media/IMG-20240730-WA0005.cee297efb77b8f898307.jpg",
     "static/media/bg-wave.png": "/static/media/bg-wave.890e9d1cfcd0872cf2b1.png",
     "static/media/IMG-20240730-WA0001.jpg": "/static/media/IMG-20240730-WA0001.e3eff13c4c7e8946c8a5.jpg",
+    "static/media/camping.png": "/static/media/camping.87f4a6839fd4cc7ad519.png",
     "static/media/Buzo.jpg": "/static/media/Buzo.d189c3afa90f194c82f9.jpg",
     "static/media/IMG-20240717-WA0009.jpg": "/static/media/IMG-20240717-WA0009.435561f180695dc39d7f.jpg",
     "static/media/IMG-20240717-WA0012.jpg": "/static/media/IMG-20240717-WA0012.a84e284c3c2070440f4e.jpg",
@@ -25,12 +26,12 @@
     "static/media/LogoTourKarimun.jpeg": "/static/media/LogoTourKarimun.88ef51553ee6c3741b34.jpeg",
     "static/media/Berpose di tulisan Love di bukit Love Karimunjawa.jpg": "/static/media/Berpose di tulisan Love di bukit Love Karimunjawa.2722c231efa436517f52.jpg",
     "index.html": "/index.html",
-    "main.34628f0a.css.map": "/static/css/main.34628f0a.css.map",
-    "main.98b927af.js.map": "/static/js/main.98b927af.js.map",
+    "main.2c3fbf8d.css.map": "/static/css/main.2c3fbf8d.css.map",
+    "main.703cd3e0.js.map": "/static/js/main.703cd3e0.js.map",
     "453.0a35478e.chunk.js.map": "/static/js/453.0a35478e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34628f0a.css",
-    "static/js/main.98b927af.js"
+    "static/css/main.2c3fbf8d.css",
+    "static/js/main.703cd3e0.js"
   ]
 }

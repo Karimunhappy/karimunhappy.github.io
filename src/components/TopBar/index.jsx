@@ -17,9 +17,33 @@ function TopBar() {
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isEnglish, setIsEnglish] = useState(true);
 
-    // Fungsi untuk mengubah bahasa
+    // Fungsi untuk mengubah bahasa dan navigasi ke halaman yang sesuai
     const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
+        i18n.changeLanguage(lng); // Ubah bahasa dengan i18next
+
+        // Dapatkan path saat ini
+        const currentPath = window.location.pathname;
+
+        // Tentukan apakah path saat ini sudah mengandung 'en' atau 'id'
+        const isEnglishPath = currentPath.startsWith('/en/');
+        const isIndonesianPath = currentPath.startsWith('/id/');
+
+        // Mengganti URL path dengan bahasa yang baru
+        let newPath = currentPath;
+        if (isEnglishPath || isIndonesianPath) {
+            newPath = currentPath.replace(/^\/(en|id)/, `/${lng}`);
+        } else {
+            newPath = `/${lng}${currentPath}`;
+        }
+
+        // Navigasi ke URL yang baru
+        navigate(newPath);
+    };
+
+    // Fungsi untuk menavigasi ke halaman baru dengan bahasa saat ini
+    const navigateToPage = (path) => {
+        const currentLang = i18n.language; // Mendapatkan bahasa saat ini
+        navigate(`/${currentLang}${path}`); // Menambahkan bahasa ke path URL
     };
 
     const controlNavbar = () => {
@@ -68,30 +92,30 @@ function TopBar() {
                         className="me-auto my-2 font-Montserrat"
                         style={{ maxHeight: '100px' }}
                     >
-                        <Nav.Link onClick={() => { navigate("/") }} className='!text-Navy'>
+                        <Nav.Link onClick={() => { navigateToPage("/home") }} className='!text-Navy'>
                             {t('navbar.home')}
                         </Nav.Link>
-                        <Nav.Link onClick={() => { navigate("/Service") }} className='!text-Navy'>
+                        <Nav.Link onClick={() => { navigateToPage('/Service') }} className='!text-Navy'>
                             {t('navbar.service')}
                         </Nav.Link>
-                        <Nav.Link onClick={() => { navigate("/Explore") }} className='!text-Navy'>
+                        <Nav.Link onClick={() => { navigateToPage("/Explore") }} className='!text-Navy'>
                             {t('navbar.explore')}
                         </Nav.Link>
                         <NavDropdown title={t('navbar.package options')} id="navbarScrollingDropdown" className='!text-Navy'>
-                            <NavDropdown.Item onClick={() => { navigate("Paket/2D1N") }}>
+                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/2D1N") }}>
                                 {t('navbar.package2D1N')}
                             </NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => { navigate("Paket/2D2N") }}>
+                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/2D2N") }}>
                                 {t('navbar.package2D2N')}
                             </NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => { navigate("Paket/3D2N") }}>
+                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/3D2N") }}>
                                 {t('navbar.package3D2N')}
                             </NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => { navigate("Paket/4D3N") }}>
+                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/4D3N") }}>
                                 {t('navbar.package4D3N')}
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link onClick={() => { navigate("/Testimonials") }} className='!text-Navy'>
+                        <Nav.Link onClick={() => { navigateToPage("/Testimonials") }} className='!text-Navy'>
                             {t('navbar.testimonials')}
                         </Nav.Link>
                     </Nav>
@@ -114,7 +138,7 @@ function TopBar() {
                     </a>
                 </div>
             </Container>
-        </Navbar>
+        </Navbar >
     );
 }
 

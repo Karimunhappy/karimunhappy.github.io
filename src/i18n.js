@@ -15,8 +15,8 @@ i18n
                 translation: translationID
             }
         },
-        lng: 'en', // Bahasa default
-        fallbackLng: 'en', // Jika bahasa tidak tersedia, gunakan ini
+        lng: 'id', // Bahasa default
+        fallbackLng: 'id', // Jika bahasa tidak tersedia, gunakan ini
         interpolation: {
             escapeValue: false // React sudah melakukan escaping
         }

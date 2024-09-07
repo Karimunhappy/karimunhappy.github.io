@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/karimunhappy/static/css/main.96725847.css",
-    "main.js": "/karimunhappy/static/js/main.d3de8d78.js",
+    "main.js": "/karimunhappy/static/js/main.b8601180.js",
     "static/js/453.0a35478e.chunk.js": "/karimunhappy/static/js/453.0a35478e.chunk.js",
     "static/media/IMG-20240730-WA0021.jpg": "/karimunhappy/static/media/IMG-20240730-WA0021.5f83782f2d115bbddcaf.jpg",
     "static/media/IMG-20240730-WA0005.jpg": "/karimunhappy/static/media/IMG-20240730-WA0005.cee297efb77b8f898307.jpg",
@@ -27,11 +27,11 @@
     "static/media/Berpose di tulisan Love di bukit Love Karimunjawa.jpg": "/karimunhappy/static/media/Berpose di tulisan Love di bukit Love Karimunjawa.2722c231efa436517f52.jpg",
     "index.html": "/karimunhappy/index.html",
     "main.96725847.css.map": "/karimunhappy/static/css/main.96725847.css.map",
-    "main.d3de8d78.js.map": "/karimunhappy/static/js/main.d3de8d78.js.map",
+    "main.b8601180.js.map": "/karimunhappy/static/js/main.b8601180.js.map",
     "453.0a35478e.chunk.js.map": "/karimunhappy/static/js/453.0a35478e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96725847.css",
-    "static/js/main.d3de8d78.js"
+    "static/js/main.b8601180.js"
   ]
 }

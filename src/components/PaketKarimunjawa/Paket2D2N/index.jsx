@@ -449,40 +449,42 @@ const Paket2D2N = () => {
                     </Table>
                 </div>
                 <div>
-                    <h2 className="mt-10">Fasilitas</h2>
-                    <p>* ⁠Tiket Kapal KMC Express Bahari PP (pelabuhan Kartini Jepara - Karimunjawa)
+                    <h2 className="mt-10">{t('content.packageHeaderContentFacility')}</h2>
+                    <p>* {t('content.packageContentFasility1')}
                         <br />
-                        * Makan 6x (sudah termasuk Barbeque 1x di pulau)
+                        * {t('content.packageContentFasility2')}
                         <br />
-                        * Mobil transport pelabuhan - penginapan
+                        * {t('content.packageContentFasility3')}
                         <br />
-                        * peralatan Snorkeling lengkap
+                        * {t('content.packageContentFasility4')}
                         <br />
-                        * Life Jacket/Pelampung
+                        * {t('content.packageContentFasility5')}
                         <br />
-                        * Kapal Kecil buat Tour Laut
+                        * {t('content.packageContentFasility6')}
                         <br />
-                        * Air mineral
+                        * {t('content.packageContentFasility7')}
                         <br />
-                        * Perlengkapan P3k
+                        * {t('content.packageContentFasility8')}
                         <br />
-                        * Roti buat Makan Ikan saat Snorkeling
+                        * {t('content.packageContentFasility9')}
                         <br />
-                        * Guide Tour Bersertifikat
+                        * {t('content.packageContentFasility10')}
                         <br />
-                        * ⁠Biaya sandar Kapal
+                        * {t('content.packageContentFasility11')}
                         <br />
-                        * ⁠Foto Underwater
+                        * {t('content.packageContentFasility12')}
                         <br />
-                        * ⁠Foto Upwater
+                        * {t('content.packageContentFasility13')}
                         <br />
-                        * ⁠Tiket Masuk Wisata
+                        * {t('content.packageContentFasility14')}
+                        <br />
+                        * {t('content.packageContentFasility15')}
                     </p>
-                    <h4>Tidak Termasuk</h4>
+                    <h4>{t('content.packageContentTitleNonFasility')}</h4>
                     <p>
-                        * Transportasi ke jepara
+                        * {t('content.packageContentNonFasility1')}
                         <br />
-                        * ⁠biaya tambaha Seperti Jetski
+                        * {t('content.packageContentNonFasility2')}
                     </p>
                 </div>
             </div>

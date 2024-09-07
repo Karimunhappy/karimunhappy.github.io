@@ -15,7 +15,11 @@ function TopBar() {
     const navigate = useNavigate();
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
-    const [isEnglish, setIsEnglish] = useState(true);
+    const [isEnglish, setIsEnglish] = useState(false);
+    const [expanded, setExpanded] = useState(false);
+
+    const handleToggle = () => setExpanded(!expanded);
+
 
     // Fungsi untuk mengubah bahasa dan navigasi ke halaman yang sesuai
     const changeLanguage = (lng) => {
@@ -72,10 +76,10 @@ function TopBar() {
         };
     }, [lastScrollY]);
     return (
-        <Navbar className={`!fixed top-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${showNavbar ? 'translate-y-0' : '-translate-y-full'
+        <Navbar expanded={expanded} onToggle={handleToggle} className={`!fixed top-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${showNavbar ? 'translate-y-0' : '-translate-y-full'
             }`} expand="lg" >
             <Container className="grid grid-cols-3 gap-4 md:gap-12">
-                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} className='focus:!shadow-none !border-none' />
+                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} onClick={handleToggle} className='focus:!shadow-none !border-none' />
                 <Navbar.Brand onClick={() => { navigate("/") }} className='cursor-pointer'>
                     <div className='w-32 md:w-44 flex justify-center'>
                         <img src={Logo} alt="" className='w-32 md:w-44' />
@@ -92,30 +96,30 @@ function TopBar() {
                         className="me-auto my-2 font-Montserrat"
                         style={{ maxHeight: '100px' }}
                     >
-                        <Nav.Link onClick={() => { navigateToPage("/home") }} className='!text-Navy'>
+                        <Nav.Link onClick={() => { navigateToPage("/home"); setExpanded(false) }} className='!text-Navy'>
                             {t('navbar.home')}
                         </Nav.Link>
-                        <Nav.Link onClick={() => { navigateToPage('/Service') }} className='!text-Navy'>
+                        <Nav.Link onClick={() => { navigateToPage('/Service'); setExpanded(false) }} className='!text-Navy'>
                             {t('navbar.service')}
                         </Nav.Link>
-                        <Nav.Link onClick={() => { navigateToPage("/Explore") }} className='!text-Navy'>
+                        <Nav.Link onClick={() => { navigateToPage("/Explore"); setExpanded(false) }} className='!text-Navy'>
                             {t('navbar.explore')}
                         </Nav.Link>
                         <NavDropdown title={t('navbar.package options')} id="navbarScrollingDropdown" className='!text-Navy'>
-                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/2D1N") }}>
+                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/2D1N"); setExpanded(false) }}>
                                 {t('navbar.package2D1N')}
                             </NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/2D2N") }}>
+                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/2D2N"); setExpanded(false) }}>
                                 {t('navbar.package2D2N')}
                             </NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/3D2N") }}>
+                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/3D2N"); setExpanded(false) }}>
                                 {t('navbar.package3D2N')}
                             </NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/4D3N") }}>
+                            <NavDropdown.Item onClick={() => { navigateToPage("/Paket/4D3N"); setExpanded(false) }}>
                                 {t('navbar.package4D3N')}
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link onClick={() => { navigateToPage("/Testimonials") }} className='!text-Navy'>
+                        <Nav.Link onClick={() => { navigateToPage("/Testimonials"); setExpanded(false) }} className='!text-Navy'>
                             {t('navbar.testimonials')}
                         </Nav.Link>
                     </Nav>

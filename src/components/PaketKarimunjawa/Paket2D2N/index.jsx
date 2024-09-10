@@ -13,10 +13,10 @@ const Paket2D2N = () => {
                     backgroundPosition: '50% 30%',
                 }}
             ></div>
-            <h1 className="-mt-96 text-white text-5xl">{t('content.packageTitle2D2N')}</h1>
+            <h1 className="-mt-96 text-white text-5xl text-center">{t('content.packageTitle2D2N')}</h1>
             <div className="bg-[#2db0f4] h-[3px] w-32 my-3"></div>
-            <h3 className="text-center px-10 md:px-28 py-16 text-white">{t('content.packageSubtitle2D2N')}</h3>
-            <div className="shadow-lg p-5 bg-white rounded-lg">
+            <h3 className="text-center px-10 md:px-28 py-12 text-white">{t('content.packageSubtitle2D2N')}</h3>
+            <div className="shadow-lg p-1 md:p-5 bg-white rounded-lg w-screen">
                 <h2>{t('content.packageContentTitle2D2N')}</h2>
                 <h5>({t('content.packageContentSubtitle2D2N')})</h5>
                 <div className="flex justify-between gap-5">
